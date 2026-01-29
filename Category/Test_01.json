@@ -7,11 +7,11 @@
         {
             "rid": "fd381a36-2451-470f-8dee-8585e9e3e75a",
             "type": "ShaderNodeTexCoord",
-            "name": "Texture Coordinate",
+            "name": "Texture Coordinate.001",
             "label": "",
             "loc": [
-                -857.5842895507812,
-                633.2713623046875
+                -868.9197387695312,
+                197.8994140625
             ],
             "dims": [
                 140.0,
@@ -27,11 +27,11 @@
         {
             "rid": "fa05cf22-1fe2-4878-8ac6-412ad6ece2b8",
             "type": "ShaderNodeMapping",
-            "name": "Mapping",
+            "name": "Mapping.001",
             "label": "",
             "loc": [
-                -677.5843505859375,
-                633.2713623046875
+                -688.919921875,
+                197.8994140625
             ],
             "dims": [
                 140.0,
@@ -60,11 +60,11 @@
         {
             "rid": "0a872c09-5fa6-4721-b168-8cb0ca28b88e",
             "type": "ShaderNodeTexNoise",
-            "name": "Noise Texture",
+            "name": "Noise Texture.001",
             "label": "",
             "loc": [
-                -497.5843200683594,
-                673.2713623046875
+                -508.91986083984375,
+                237.8994140625
             ],
             "dims": [
                 140.0,
@@ -113,11 +113,11 @@
         {
             "rid": "47256a97-c1b1-48b7-8e66-cf7e7470cb76",
             "type": "ShaderNodeValToRGB",
-            "name": "Color Ramp",
+            "name": "Color Ramp.001",
             "label": "",
             "loc": [
-                -286.00390625,
-                667.458740234375
+                -297.3393859863281,
+                232.08676147460938
             ],
             "dims": [
                 240.0,
@@ -145,9 +145,9 @@
                     {
                         "pos": 0.5381819009780884,
                         "color": [
-                            0.18726618587970734,
-                            0.28848040103912354,
-                            0.4996671974658966,
+                            0.49953269958496094,
+                            0.001340846181847155,
+                            0.0,
                             1.0
                         ],
                         "idx": 1
@@ -168,11 +168,11 @@
         {
             "rid": "e6e17fa3-7322-4dc7-8a6c-f08f8a2d4604",
             "type": "ShaderNodeBsdfPrincipled",
-            "name": "Principled BSDF",
+            "name": "Principled BSDF.001",
             "label": "",
             "loc": [
-                -15.956502914428711,
-                689.6978759765625
+                -27.292016983032227,
+                254.3258819580078
             ],
             "dims": [
                 240.0,
@@ -345,11 +345,11 @@
         {
             "rid": "5f39d20d-d0e2-47f9-a5e4-ed0f50e21037",
             "type": "ShaderNodeOutputMaterial",
-            "name": "Material Output",
+            "name": "Material Output.001",
             "label": "",
             "loc": [
-                274.04351806640625,
-                689.6978759765625
+                262.7080078125,
+                254.3258819580078
             ],
             "dims": [
                 140.0,
@@ -377,6 +377,36 @@
         }
     ],
     "links": [
+        {
+            "f_rid": "e6e17fa3-7322-4dc7-8a6c-f08f8a2d4604",
+            "f_sock": 0,
+            "t_rid": "5f39d20d-d0e2-47f9-a5e4-ed0f50e21037",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "47256a97-c1b1-48b7-8e66-cf7e7470cb76",
+            "f_sock": 0,
+            "t_rid": "e6e17fa3-7322-4dc7-8a6c-f08f8a2d4604",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "fa05cf22-1fe2-4878-8ac6-412ad6ece2b8",
+            "f_sock": 0,
+            "t_rid": "0a872c09-5fa6-4721-b168-8cb0ca28b88e",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "fd381a36-2451-470f-8dee-8585e9e3e75a",
+            "f_sock": 0,
+            "t_rid": "fa05cf22-1fe2-4878-8ac6-412ad6ece2b8",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "0a872c09-5fa6-4721-b168-8cb0ca28b88e",
+            "f_sock": 0,
+            "t_rid": "47256a97-c1b1-48b7-8e66-cf7e7470cb76",
+            "t_sock": 0
+        },
         {
             "f_rid": "e6e17fa3-7322-4dc7-8a6c-f08f8a2d4604",
             "f_sock": 0,
