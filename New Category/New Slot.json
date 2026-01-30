@@ -1,0 +1,75 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "5.0.1"
+    },
+    "nodes": [
+        {
+            "rid": "996ef6c0-6639-4392-ba18-d82a94e0b04a",
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "label": "",
+            "loc": [
+                300.0,
+                300.0
+            ],
+            "props": {}
+        },
+        {
+            "rid": "8513f042-e620-41d3-be89-e070edb765c2",
+            "type": "ShaderNodeBsdfPrincipled",
+            "name": "Principled BSDF",
+            "label": "",
+            "loc": [
+                10.0,
+                300.0
+            ],
+            "props": {}
+        },
+        {
+            "rid": "c011f26f-da70-4ece-b271-0b78c592b297",
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture",
+            "label": "",
+            "loc": [
+                -507.025390625,
+                270.4681396484375
+            ],
+            "props": {}
+        },
+        {
+            "rid": "e991087a-10a3-42da-9bc4-04bb110d4387",
+            "type": "ShaderNodeMapping",
+            "name": "Mapping",
+            "label": "",
+            "loc": [
+                -687.025390625,
+                230.4681396484375
+            ],
+            "props": {}
+        },
+        {
+            "rid": "20342dce-8dab-4ed2-9396-a7c64d9623ed",
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate",
+            "label": "",
+            "loc": [
+                -867.025390625,
+                230.4681396484375
+            ],
+            "props": {}
+        },
+        {
+            "rid": "050a8453-01fe-4288-88c3-06db49e71e7c",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                -290.81072998046875,
+                263.7808837890625
+            ],
+            "props": {}
+        }
+    ],
+    "tree_type": "ShaderNodeTree"
+}
