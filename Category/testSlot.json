@@ -5,13 +5,33 @@
     },
     "nodes": [
         {
-            "rid": "93617a87-2cf1-445c-8264-ceade5b292d7",
-            "type": "ShaderNodeOutputMaterial",
-            "name": "Material Output",
+            "rid": "4713bbcc-3ad3-4215-afe0-99061ca5685d",
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate.001",
             "label": "",
             "loc": [
-                293.5340270996094,
-                262.74847412109375
+                -860.2666015625,
+                -150.4564666748047
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "6cc88cae-cc15-4ad4-85ef-1ee3d42a32b3",
+            "type": "ShaderNodeMapping",
+            "name": "Mapping.001",
+            "label": "",
+            "loc": [
+                -680.2664794921875,
+                -150.4564666748047
             ],
             "dims": [
                 140.0,
@@ -24,27 +44,135 @@
             "props": {},
             "inputs": [
                 {
+                    "i": 1,
+                    "v": "<Vector (0.0000, 0.0000, 0.0000)>"
+                },
+                {
                     "i": 2,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
+                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
                 },
                 {
                     "i": 3,
+                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
+                }
+            ]
+        },
+        {
+            "rid": "c15da92f-3096-4636-afec-3c78be4efed3",
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture.001",
+            "label": "",
+            "loc": [
+                -500.2665100097656,
+                -110.45646667480469
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 5.0
+                },
+                {
+                    "i": 3,
+                    "v": 2.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.5
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
                     "v": 0.0
                 }
             ]
         },
         {
-            "rid": "25bc7451-b7db-4403-842f-a8472e0c6834",
-            "type": "ShaderNodeBsdfPrincipled",
-            "name": "Principled BSDF",
+            "rid": "1a3fdc6f-9690-4328-a74d-e895338bf831",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp.001",
             "label": "",
             "loc": [
-                3.5340332984924316,
-                262.74847412109375
+                -284.05194091796875,
+                -117.14372253417969
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.23636363446712494,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.46727272868156433,
+                        "color": [
+                            0.0,
+                            0.0024763501714915037,
+                            0.49983111023902893,
+                            1.0
+                        ],
+                        "idx": 1
+                    },
+                    {
+                        "pos": 0.6981818079948425,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 2
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "25bc7451-b7db-4403-842f-a8472e0c6834",
+            "type": "ShaderNodeBsdfPrincipled",
+            "name": "Principled BSDF.001",
+            "label": "",
+            "loc": [
+                16.75881576538086,
+                -80.92460632324219
             ],
             "dims": [
                 240.0,
@@ -215,13 +343,13 @@
             ]
         },
         {
-            "rid": "c15da92f-3096-4636-afec-3c78be4efed3",
-            "type": "ShaderNodeTexNoise",
-            "name": "Noise Texture",
+            "rid": "93617a87-2cf1-445c-8264-ceade5b292d7",
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output.001",
             "label": "",
             "loc": [
-                -513.4913330078125,
-                233.2166290283203
+                306.7588195800781,
+                -80.92460632324219
             ],
             "dims": [
                 140.0,
@@ -234,149 +362,51 @@
             "props": {},
             "inputs": [
                 {
-                    "i": 1,
-                    "v": 0.0
-                },
-                {
                     "i": 2,
-                    "v": 5.0
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
                 },
                 {
                     "i": 3,
-                    "v": 2.0
-                },
-                {
-                    "i": 4,
-                    "v": 0.5
-                },
-                {
-                    "i": 5,
-                    "v": 2.0
-                },
-                {
-                    "i": 6,
-                    "v": 0.0
-                },
-                {
-                    "i": 7,
-                    "v": 1.0
-                },
-                {
-                    "i": 8,
                     "v": 0.0
                 }
             ]
-        },
-        {
-            "rid": "6cc88cae-cc15-4ad4-85ef-1ee3d42a32b3",
-            "type": "ShaderNodeMapping",
-            "name": "Mapping",
-            "label": "",
-            "loc": [
-                -693.4913330078125,
-                193.2166290283203
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": "<Vector (0.0000, 0.0000, 0.0000)>"
-                },
-                {
-                    "i": 2,
-                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
-                },
-                {
-                    "i": 3,
-                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
-                }
-            ]
-        },
-        {
-            "rid": "4713bbcc-3ad3-4215-afe0-99061ca5685d",
-            "type": "ShaderNodeTexCoord",
-            "name": "Texture Coordinate",
-            "label": "",
-            "loc": [
-                -873.4913940429688,
-                193.2166290283203
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": []
-        },
-        {
-            "rid": "1a3fdc6f-9690-4328-a74d-e895338bf831",
-            "type": "ShaderNodeValToRGB",
-            "name": "Color Ramp",
-            "label": "",
-            "loc": [
-                -297.2767028808594,
-                226.5293731689453
-            ],
-            "dims": [
-                240.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [],
-            "color_ramp": {
-                "interpolation": "LINEAR",
-                "elements": [
-                    {
-                        "pos": 0.23636363446712494,
-                        "color": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                        ],
-                        "idx": 0
-                    },
-                    {
-                        "pos": 0.46727272868156433,
-                        "color": [
-                            0.0,
-                            0.0024763501714915037,
-                            0.49983111023902893,
-                            1.0
-                        ],
-                        "idx": 1
-                    },
-                    {
-                        "pos": 0.6981818079948425,
-                        "color": [
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
-                        ],
-                        "idx": 2
-                    }
-                ]
-            }
         }
     ],
     "links": [
+        {
+            "f_rid": "25bc7451-b7db-4403-842f-a8472e0c6834",
+            "f_sock": 0,
+            "t_rid": "93617a87-2cf1-445c-8264-ceade5b292d7",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "1a3fdc6f-9690-4328-a74d-e895338bf831",
+            "f_sock": 0,
+            "t_rid": "25bc7451-b7db-4403-842f-a8472e0c6834",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "6cc88cae-cc15-4ad4-85ef-1ee3d42a32b3",
+            "f_sock": 0,
+            "t_rid": "c15da92f-3096-4636-afec-3c78be4efed3",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "4713bbcc-3ad3-4215-afe0-99061ca5685d",
+            "f_sock": 0,
+            "t_rid": "6cc88cae-cc15-4ad4-85ef-1ee3d42a32b3",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c15da92f-3096-4636-afec-3c78be4efed3",
+            "f_sock": 0,
+            "t_rid": "1a3fdc6f-9690-4328-a74d-e895338bf831",
+            "t_sock": 0
+        },
         {
             "f_rid": "25bc7451-b7db-4403-842f-a8472e0c6834",
             "f_sock": 0,
