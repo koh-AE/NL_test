@@ -5,13 +5,13 @@
     },
     "nodes": [
         {
-            "rid": "2c37aabc-1e81-49d4-979c-fae273745b5b",
+            "rid": "5ee2be09-bf8a-4894-8fd4-89edf936fee9",
             "type": "ShaderNodeBsdfPrincipled",
             "name": "Principled BSDF",
             "label": "",
             "loc": [
-                10.0,
-                300.0
+                1304.5784912109375,
+                305.4193420410156
             ],
             "dims": [
                 240.0,
@@ -33,7 +33,7 @@
                 },
                 {
                     "i": 3,
-                    "v": 1.5
+                    "v": 1.4500000476837158
                 },
                 {
                     "i": 4,
@@ -182,13 +182,13 @@
             ]
         },
         {
-            "rid": "4db4314b-8a2f-4bc1-b977-3a38399c7484",
+            "rid": "736b8add-edd4-473c-b410-03149b37f869",
             "type": "ShaderNodeOutputMaterial",
             "name": "Material Output",
             "label": "",
             "loc": [
-                300.0,
-                300.0
+                1594.5784912109375,
+                305.4193420410156
             ],
             "dims": [
                 140.0,
@@ -215,13 +215,58 @@
             ]
         },
         {
-            "rid": "5db54414-decb-48d7-84a2-8a253fe5de60",
+            "rid": "018b24a2-3d82-4c62-b4bd-820dbec6ea1a",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                949.5358276367188,
+                302.33905029296875
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.2763635814189911,
+                        "color": [
+                            0.09478418529033661,
+                            0.010963674634695053,
+                            0.0663466602563858,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.836363673210144,
+                        "color": [
+                            1.0,
+                            0.0,
+                            0.013618016615509987,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "eefc8cae-b186-4d99-9c04-89988acfa94f",
             "type": "ShaderNodeTexNoise",
             "name": "Noise Texture",
             "label": "",
             "loc": [
-                -457.67523193359375,
-                263.87615966796875
+                703.9263305664062,
+                327.52630615234375
             ],
             "dims": [
                 140.0,
@@ -268,13 +313,13 @@
             ]
         },
         {
-            "rid": "ca238633-a0b1-45f0-b323-93bc3537302e",
+            "rid": "2ae5b48c-944b-47e4-b635-76bb25149f1c",
             "type": "ShaderNodeMapping",
             "name": "Mapping",
             "label": "",
             "loc": [
-                -637.6752319335938,
-                223.8761444091797
+                523.9263305664062,
+                287.52630615234375
             ],
             "dims": [
                 140.0,
@@ -301,13 +346,13 @@
             ]
         },
         {
-            "rid": "52503ee4-e254-416e-a5fc-73d4dba73b2b",
+            "rid": "fb4c6970-739f-43ba-ada7-d35b996740cb",
             "type": "ShaderNodeTexCoord",
             "name": "Texture Coordinate",
             "label": "",
             "loc": [
-                -817.6752319335938,
-                223.8761444091797
+                343.92633056640625,
+                287.52630615234375
             ],
             "dims": [
                 140.0,
@@ -319,92 +364,37 @@
             "parent_rid": null,
             "props": {},
             "inputs": []
-        },
-        {
-            "rid": "ede5425e-f473-4d72-9a13-901a2cdb6f7a",
-            "type": "ShaderNodeValToRGB",
-            "name": "Color Ramp",
-            "label": "",
-            "loc": [
-                -276.48779296875,
-                276.94720458984375
-            ],
-            "dims": [
-                240.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [],
-            "color_ramp": {
-                "interpolation": "LINEAR",
-                "elements": [
-                    {
-                        "pos": 0.13818180561065674,
-                        "color": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                        ],
-                        "idx": 0
-                    },
-                    {
-                        "pos": 0.4563636779785156,
-                        "color": [
-                            0.0,
-                            0.049024734646081924,
-                            0.49982142448425293,
-                            1.0
-                        ],
-                        "idx": 1
-                    },
-                    {
-                        "pos": 0.7745455503463745,
-                        "color": [
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
-                        ],
-                        "idx": 2
-                    }
-                ]
-            }
         }
     ],
     "links": [
         {
-            "f_rid": "2c37aabc-1e81-49d4-979c-fae273745b5b",
+            "f_rid": "5ee2be09-bf8a-4894-8fd4-89edf936fee9",
             "f_sock": 0,
-            "t_rid": "4db4314b-8a2f-4bc1-b977-3a38399c7484",
+            "t_rid": "736b8add-edd4-473c-b410-03149b37f869",
             "t_sock": 0
         },
         {
-            "f_rid": "ca238633-a0b1-45f0-b323-93bc3537302e",
+            "f_rid": "eefc8cae-b186-4d99-9c04-89988acfa94f",
             "f_sock": 0,
-            "t_rid": "5db54414-decb-48d7-84a2-8a253fe5de60",
+            "t_rid": "018b24a2-3d82-4c62-b4bd-820dbec6ea1a",
             "t_sock": 0
         },
         {
-            "f_rid": "52503ee4-e254-416e-a5fc-73d4dba73b2b",
+            "f_rid": "2ae5b48c-944b-47e4-b635-76bb25149f1c",
             "f_sock": 0,
-            "t_rid": "ca238633-a0b1-45f0-b323-93bc3537302e",
+            "t_rid": "eefc8cae-b186-4d99-9c04-89988acfa94f",
             "t_sock": 0
         },
         {
-            "f_rid": "5db54414-decb-48d7-84a2-8a253fe5de60",
+            "f_rid": "fb4c6970-739f-43ba-ada7-d35b996740cb",
             "f_sock": 0,
-            "t_rid": "ede5425e-f473-4d72-9a13-901a2cdb6f7a",
+            "t_rid": "2ae5b48c-944b-47e4-b635-76bb25149f1c",
             "t_sock": 0
         },
         {
-            "f_rid": "ede5425e-f473-4d72-9a13-901a2cdb6f7a",
+            "f_rid": "018b24a2-3d82-4c62-b4bd-820dbec6ea1a",
             "f_sock": 0,
-            "t_rid": "2c37aabc-1e81-49d4-979c-fae273745b5b",
+            "t_rid": "5ee2be09-bf8a-4894-8fd4-89edf936fee9",
             "t_sock": 0
         }
     ],
