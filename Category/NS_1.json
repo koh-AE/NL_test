@@ -5,6 +5,157 @@
     },
     "nodes": [
         {
+            "rid": "6d85bfc6-e5ad-4249-abc4-9f303a1a2377",
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate",
+            "label": "",
+            "loc": [
+                -902.1146240234375,
+                231.38613891601562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "be5d0cb9-0502-440d-a4c9-2413051d7994",
+            "type": "ShaderNodeMapping",
+            "name": "Mapping",
+            "label": "",
+            "loc": [
+                -722.1146240234375,
+                231.38613891601562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": "<Vector (0.0000, 0.0000, 0.0000)>"
+                },
+                {
+                    "i": 2,
+                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+                },
+                {
+                    "i": 3,
+                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
+                }
+            ]
+        },
+        {
+            "rid": "97f3f9ac-fbdf-42bb-8590-0ff98a7016a2",
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture",
+            "label": "",
+            "loc": [
+                -542.1146240234375,
+                271.3861389160156
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 5.0
+                },
+                {
+                    "i": 3,
+                    "v": 2.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.5
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "e3eaf48e-c2b0-495a-88aa-a0136b9bb369",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                -338.759765625,
+                281.873291015625
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.35999995470046997,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.8036364912986755,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
             "rid": "eb4875d0-3921-4a48-a7e1-50ce90f06827",
             "type": "ShaderNodeBsdfPrincipled",
             "name": "Principled BSDF",
@@ -213,157 +364,6 @@
                     "v": 0.0
                 }
             ]
-        },
-        {
-            "rid": "e3eaf48e-c2b0-495a-88aa-a0136b9bb369",
-            "type": "ShaderNodeValToRGB",
-            "name": "Color Ramp",
-            "label": "",
-            "loc": [
-                -338.759765625,
-                281.873291015625
-            ],
-            "dims": [
-                240.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [],
-            "color_ramp": {
-                "interpolation": "LINEAR",
-                "elements": [
-                    {
-                        "pos": 0.35999995470046997,
-                        "color": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                        ],
-                        "idx": 0
-                    },
-                    {
-                        "pos": 0.8036364912986755,
-                        "color": [
-                            1.0,
-                            1.0,
-                            1.0,
-                            1.0
-                        ],
-                        "idx": 1
-                    }
-                ]
-            }
-        },
-        {
-            "rid": "97f3f9ac-fbdf-42bb-8590-0ff98a7016a2",
-            "type": "ShaderNodeTexNoise",
-            "name": "Noise Texture",
-            "label": "",
-            "loc": [
-                -542.1146240234375,
-                271.3861389160156
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": 0.0
-                },
-                {
-                    "i": 2,
-                    "v": 5.0
-                },
-                {
-                    "i": 3,
-                    "v": 2.0
-                },
-                {
-                    "i": 4,
-                    "v": 0.5
-                },
-                {
-                    "i": 5,
-                    "v": 2.0
-                },
-                {
-                    "i": 6,
-                    "v": 0.0
-                },
-                {
-                    "i": 7,
-                    "v": 1.0
-                },
-                {
-                    "i": 8,
-                    "v": 0.0
-                }
-            ]
-        },
-        {
-            "rid": "be5d0cb9-0502-440d-a4c9-2413051d7994",
-            "type": "ShaderNodeMapping",
-            "name": "Mapping",
-            "label": "",
-            "loc": [
-                -722.1146240234375,
-                231.38613891601562
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": "<Vector (0.0000, 0.0000, 0.0000)>"
-                },
-                {
-                    "i": 2,
-                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
-                },
-                {
-                    "i": 3,
-                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
-                }
-            ]
-        },
-        {
-            "rid": "6d85bfc6-e5ad-4249-abc4-9f303a1a2377",
-            "type": "ShaderNodeTexCoord",
-            "name": "Texture Coordinate",
-            "label": "",
-            "loc": [
-                -902.1146240234375,
-                231.38613891601562
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": []
         }
     ],
     "links": [
