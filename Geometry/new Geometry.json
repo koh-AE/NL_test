@@ -1,0 +1,159 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "4.9.4"
+    },
+    "nodes": [
+        {
+            "rid": "f4288dfa-5724-4428-a12c-0500df6d3cfa",
+            "type": "NodeGroupInput",
+            "name": "Group Input",
+            "label": "",
+            "loc": [
+                -507.18408203125,
+                46.01969528198242
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "3f0981a3-1acd-42b5-b944-92237e7e934d",
+            "type": "NodeGroupOutput",
+            "name": "Group Output",
+            "label": "",
+            "loc": [
+                200.0,
+                0.0
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "87b7cbc6-5ec4-4eef-ba33-5f1eeca27cdc",
+            "type": "GeometryNodeInstanceOnPoints",
+            "name": "Instance on Points",
+            "label": "",
+            "loc": [
+                3.025738477706909,
+                75.09746551513672
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 3,
+                    "v": false
+                },
+                {
+                    "i": 4,
+                    "v": 0
+                },
+                {
+                    "i": 5,
+                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+                },
+                {
+                    "i": 6,
+                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
+                }
+            ]
+        },
+        {
+            "rid": "c466fb5a-b6b6-4f98-8806-4690f9c31937",
+            "type": "GeometryNodeMeshUVSphere",
+            "name": "UV Sphere",
+            "label": "",
+            "loc": [
+                -185.97848510742188,
+                -28.120624542236328
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 32
+                },
+                {
+                    "i": 1,
+                    "v": 16
+                },
+                {
+                    "i": 2,
+                    "v": 1.0
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "87b7cbc6-5ec4-4eef-ba33-5f1eeca27cdc",
+            "f_sock": 0,
+            "t_rid": "3f0981a3-1acd-42b5-b944-92237e7e934d",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "f4288dfa-5724-4428-a12c-0500df6d3cfa",
+            "f_sock": 0,
+            "t_rid": "87b7cbc6-5ec4-4eef-ba33-5f1eeca27cdc",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c466fb5a-b6b6-4f98-8806-4690f9c31937",
+            "f_sock": 0,
+            "t_rid": "87b7cbc6-5ec4-4eef-ba33-5f1eeca27cdc",
+            "t_sock": 2
+        }
+    ],
+    "interface": [
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "OUTPUT",
+            "order": 0,
+            "subtype": "NONE"
+        },
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "INPUT",
+            "order": 1,
+            "subtype": "NONE"
+        }
+    ],
+    "tree_type": "GeometryNodeTree"
+}
