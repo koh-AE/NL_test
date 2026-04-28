@@ -1,0 +1,1026 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "4.9.4"
+    },
+    "nodes": [
+        {
+            "rid": "b686d438-0965-4a6a-ba72-17f52bd83a18",
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "label": "",
+            "loc": [
+                3180.95068359375,
+                728.8701171875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "e261faa4-a04b-4195-82fd-303ab3541451",
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate",
+            "label": "",
+            "loc": [
+                -838.35498046875,
+                313.866943359375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "c96ebe61-5370-4180-8a1d-7b8835ce3ce7",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math",
+            "label": "",
+            "loc": [
+                -677.1634521484375,
+                319.4819030761719
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "FRACTION"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "4531ccfb-92a5-4b0b-91f3-51fb63a5b8cb",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.001",
+            "label": "",
+            "loc": [
+                -455.98486328125,
+                341.8932189941406
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        1.9999998807907104,
+                        1.9999998807907104,
+                        1.9999998807907104
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "a486d7e2-071c-4ac4-893c-66577cd3e612",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.002",
+            "label": "",
+            "loc": [
+                -236.2794952392578,
+                317.76397705078125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "SUBTRACT"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "b7c4710d-c76d-4e80-be77-26bf53e0af64",
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ",
+            "label": "",
+            "loc": [
+                -16.279541015625,
+                313.2259521484375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ",
+            "label": "",
+            "loc": [
+                29.80712890625,
+                -40.289642333984375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": "2ca2aae7-90d0-437d-b600-a01b98a36ab7",
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "4cce22bf-d69f-4a3d-9cde-cea24f31ec21",
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry",
+            "label": "",
+            "loc": [
+                -198.25523376464844,
+                591.1595458984375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "c8e31a5a-5d77-49c7-a52c-cae887881527",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.003",
+            "label": "",
+            "loc": [
+                -5.367396354675293,
+                574.3251342773438
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        -1.0,
+                        -1.0,
+                        -1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "57e8a040-e3c1-4c35-afb9-30593f5f7d50",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.004",
+            "label": "",
+            "loc": [
+                214.4000244140625,
+                595.2991943359375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "DIVIDE"
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "e35f3ca8-aea4-4464-a1b2-3c8aea6c1028",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.005",
+            "label": "",
+            "loc": [
+                419.25,
+                836.5010986328125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "ABSOLUTE"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "27fe8594-e29d-49d4-84e9-a846524435ca",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.006",
+            "label": "",
+            "loc": [
+                426.728515625,
+                644.1736450195312
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "8fc9e3a0-5f11-4660-bcea-adb0c7b1031f",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.007",
+            "label": "",
+            "loc": [
+                674.2620849609375,
+                731.4622192382812
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "SUBTRACT"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "6220306e-dc05-466b-b152-c1f55b6d472c",
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.001",
+            "label": "",
+            "loc": [
+                894.39990234375,
+                712.2017822265625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "0bbe6156-6ac8-4d8d-af27-ee70e8a1a2eb",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.008",
+            "label": "",
+            "loc": [
+                1127.073486328125,
+                763.9740600585938
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MINIMUM"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "5fd26338-da0e-4b4e-8da3-647405884b56",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.009",
+            "label": "",
+            "loc": [
+                1302.082275390625,
+                738.8004150390625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MINIMUM"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "3c8dd077-8efa-4112-8232-f93f45281652",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.010",
+            "label": "",
+            "loc": [
+                1497.8626708984375,
+                818.5196533203125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "5f06c31d-abb1-4740-9a2e-2df4dd4f1378",
+            "type": "NodeReroute",
+            "name": "Reroute",
+            "label": "",
+            "loc": [
+                1423.112548828125,
+                955.2337646484375
+            ],
+            "dims": [
+                12.5,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "64788036-bd7b-4fd8-8b8b-aa0119b4f26e",
+            "type": "NodeReroute",
+            "name": "Reroute.001",
+            "label": "",
+            "loc": [
+                234.55892944335938,
+                954.3107299804688
+            ],
+            "dims": [
+                12.5,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "0f348976-1a9d-41db-b0b2-484e19e188f4",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.011",
+            "label": "",
+            "loc": [
+                1736.9752197265625,
+                708.6044311523438
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "ADD"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "beb830d7-2174-4532-9cc0-cee30a38fb26",
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.012",
+            "label": "",
+            "loc": [
+                1927.380615234375,
+                709.3729858398438
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
+            "type": "ShaderNodeVectorRotate",
+            "name": "Vector Rotate",
+            "label": "",
+            "loc": [
+                2145.4462890625,
+                728.6920166015625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.5707963705062866
+                },
+                {
+                    "i": 4,
+                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+                }
+            ]
+        },
+        {
+            "rid": "37748780-b47e-450b-b97b-54a6cd4c284b",
+            "type": "NodeReroute",
+            "name": "Reroute.002",
+            "label": "",
+            "loc": [
+                1547.697998046875,
+                275.16534423828125
+            ],
+            "dims": [
+                12.5,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
+            "type": "ShaderNodeTexEnvironment",
+            "name": "Environment Texture",
+            "label": "",
+            "loc": [
+                2502.20458984375,
+                668.6063232421875
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "2ca2aae7-90d0-437d-b600-a01b98a36ab7",
+            "type": "NodeFrame",
+            "name": "Frame",
+            "label": "奥行",
+            "loc": [
+                135.60000610351562,
+                356.79998779296875
+            ],
+            "dims": [
+                200.0,
+                189.19998168945312
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "b7b0d50d-f21f-43f1-aeb5-f4f655f79ede",
+            "type": "ShaderNodeAttribute",
+            "name": "属性",
+            "label": "",
+            "loc": [
+                1822.4423828125,
+                55.996192932128906
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": true,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "type": "ShaderNodeTexEnvironment",
+            "name": "Environment Texture.001",
+            "label": "",
+            "loc": [
+                2868.761962890625,
+                723.5670166015625
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "e261faa4-a04b-4195-82fd-303ab3541451",
+            "f_sock": 2,
+            "t_rid": "c96ebe61-5370-4180-8a1d-7b8835ce3ce7",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c96ebe61-5370-4180-8a1d-7b8835ce3ce7",
+            "f_sock": 0,
+            "t_rid": "4531ccfb-92a5-4b0b-91f3-51fb63a5b8cb",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "4531ccfb-92a5-4b0b-91f3-51fb63a5b8cb",
+            "f_sock": 0,
+            "t_rid": "a486d7e2-071c-4ac4-893c-66577cd3e612",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "a486d7e2-071c-4ac4-893c-66577cd3e612",
+            "f_sock": 0,
+            "t_rid": "b7c4710d-c76d-4e80-be77-26bf53e0af64",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b7c4710d-c76d-4e80-be77-26bf53e0af64",
+            "f_sock": 0,
+            "t_rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b7c4710d-c76d-4e80-be77-26bf53e0af64",
+            "f_sock": 1,
+            "t_rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "4cce22bf-d69f-4a3d-9cde-cea24f31ec21",
+            "f_sock": 4,
+            "t_rid": "c8e31a5a-5d77-49c7-a52c-cae887881527",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c8e31a5a-5d77-49c7-a52c-cae887881527",
+            "f_sock": 0,
+            "t_rid": "57e8a040-e3c1-4c35-afb9-30593f5f7d50",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "57e8a040-e3c1-4c35-afb9-30593f5f7d50",
+            "f_sock": 0,
+            "t_rid": "e35f3ca8-aea4-4464-a1b2-3c8aea6c1028",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "57e8a040-e3c1-4c35-afb9-30593f5f7d50",
+            "f_sock": 0,
+            "t_rid": "27fe8594-e29d-49d4-84e9-a846524435ca",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
+            "f_sock": 0,
+            "t_rid": "27fe8594-e29d-49d4-84e9-a846524435ca",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "e35f3ca8-aea4-4464-a1b2-3c8aea6c1028",
+            "f_sock": 0,
+            "t_rid": "8fc9e3a0-5f11-4660-bcea-adb0c7b1031f",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "27fe8594-e29d-49d4-84e9-a846524435ca",
+            "f_sock": 0,
+            "t_rid": "8fc9e3a0-5f11-4660-bcea-adb0c7b1031f",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "8fc9e3a0-5f11-4660-bcea-adb0c7b1031f",
+            "f_sock": 0,
+            "t_rid": "6220306e-dc05-466b-b152-c1f55b6d472c",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "6220306e-dc05-466b-b152-c1f55b6d472c",
+            "f_sock": 1,
+            "t_rid": "0bbe6156-6ac8-4d8d-af27-ee70e8a1a2eb",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "6220306e-dc05-466b-b152-c1f55b6d472c",
+            "f_sock": 0,
+            "t_rid": "0bbe6156-6ac8-4d8d-af27-ee70e8a1a2eb",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "0bbe6156-6ac8-4d8d-af27-ee70e8a1a2eb",
+            "f_sock": 0,
+            "t_rid": "5fd26338-da0e-4b4e-8da3-647405884b56",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "6220306e-dc05-466b-b152-c1f55b6d472c",
+            "f_sock": 2,
+            "t_rid": "5fd26338-da0e-4b4e-8da3-647405884b56",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "5f06c31d-abb1-4740-9a2e-2df4dd4f1378",
+            "f_sock": 0,
+            "t_rid": "3c8dd077-8efa-4112-8232-f93f45281652",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "5fd26338-da0e-4b4e-8da3-647405884b56",
+            "f_sock": 0,
+            "t_rid": "3c8dd077-8efa-4112-8232-f93f45281652",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "64788036-bd7b-4fd8-8b8b-aa0119b4f26e",
+            "f_sock": 0,
+            "t_rid": "5f06c31d-abb1-4740-9a2e-2df4dd4f1378",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c8e31a5a-5d77-49c7-a52c-cae887881527",
+            "f_sock": 0,
+            "t_rid": "64788036-bd7b-4fd8-8b8b-aa0119b4f26e",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "3c8dd077-8efa-4112-8232-f93f45281652",
+            "f_sock": 0,
+            "t_rid": "0f348976-1a9d-41db-b0b2-484e19e188f4",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "37748780-b47e-450b-b97b-54a6cd4c284b",
+            "f_sock": 0,
+            "t_rid": "0f348976-1a9d-41db-b0b2-484e19e188f4",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "0f348976-1a9d-41db-b0b2-484e19e188f4",
+            "f_sock": 0,
+            "t_rid": "beb830d7-2174-4532-9cc0-cee30a38fb26",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "beb830d7-2174-4532-9cc0-cee30a38fb26",
+            "f_sock": 0,
+            "t_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
+            "f_sock": 0,
+            "t_rid": "37748780-b47e-450b-b97b-54a6cd4c284b",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
+            "f_sock": 0,
+            "t_rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
+            "f_sock": 0,
+            "t_rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "f_sock": 0,
+            "t_rid": "b686d438-0965-4a6a-ba72-17f52bd83a18",
+            "t_sock": 0
+        }
+    ],
+    "interface": [],
+    "tree_type": "ShaderNodeTree"
+}
