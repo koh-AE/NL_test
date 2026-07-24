@@ -10,8 +10,8 @@
             "name": "Material Output",
             "label": "",
             "loc": [
-                4380.8798828125,
-                972.8798828125
+                3180.95068359375,
+                728.8701171875
             ],
             "dims": [
                 140.0,
@@ -699,8 +699,8 @@
             "name": "Vector Rotate",
             "label": "",
             "loc": [
-                2691.12890625,
-                731.4598388671875
+                2145.4462890625,
+                728.6920166015625
             ],
             "dims": [
                 140.0,
@@ -759,13 +759,13 @@
             "inputs": []
         },
         {
-            "rid": "eb99d009-676e-4b5b-af12-ba113eda3fe3",
+            "rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
             "type": "ShaderNodeTexEnvironment",
             "name": "Environment Texture",
             "label": "",
             "loc": [
-                2041.072021484375,
-                46.06989288330078
+                2502.20458984375,
+                668.6063232421875
             ],
             "dims": [
                 240.0,
@@ -776,16 +776,7 @@
             "color": null,
             "parent_rid": null,
             "props": {},
-            "inputs": [
-                {
-                    "i": 0,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
-                }
-            ]
+            "inputs": []
         },
         {
             "rid": "2ca2aae7-90d0-437d-b600-a01b98a36ab7",
@@ -808,7 +799,7 @@
             "inputs": []
         },
         {
-            "rid": "f0d4f8e8-619e-4589-a8c6-27bbed96d1fa",
+            "rid": "b7b0d50d-f21f-43f1-aeb5-f4f655f79ede",
             "type": "ShaderNodeAttribute",
             "name": "属性",
             "label": "",
@@ -828,86 +819,13 @@
             "inputs": []
         },
         {
-            "rid": "a97ca975-c057-43ee-84b7-ccb36eb7fae2",
-            "type": "ShaderNodeMix",
-            "name": "Mix",
+            "rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "type": "ShaderNodeTexEnvironment",
+            "name": "Environment Texture.001",
             "label": "",
             "loc": [
-                4162.3642578125,
-                941.2296142578125
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "blend_type": "MIX",
-                "data_type": "RGBA"
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": [
-                        0.5,
-                        0.5,
-                        0.5
-                    ]
-                },
-                {
-                    "i": 2,
-                    "v": 0.0
-                },
-                {
-                    "i": 3,
-                    "v": 0.0
-                },
-                {
-                    "i": 4,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
-                },
-                {
-                    "i": 5,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
-                },
-                {
-                    "i": 6,
-                    "v": [
-                        0.5,
-                        0.5,
-                        0.5,
-                        1.0
-                    ]
-                },
-                {
-                    "i": 8,
-                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
-                },
-                {
-                    "i": 9,
-                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
-                }
-            ]
-        },
-        {
-            "rid": "d6505dfc-e9ca-493c-90d2-b481703e41bb",
-            "type": "ShaderNodeTexImage",
-            "name": "Image Texture",
-            "label": "",
-            "loc": [
-                3655.9345703125,
-                733.065673828125
+                2868.761962890625,
+                723.5670166015625
             ],
             "dims": [
                 240.0,
@@ -919,289 +837,6 @@
             "parent_rid": null,
             "props": {},
             "inputs": []
-        },
-        {
-            "rid": "4664403b-5fca-40ab-81db-ab37c982e7c6",
-            "type": "ShaderNodeMath",
-            "name": "Math.004",
-            "label": "",
-            "loc": [
-                3146.311767578125,
-                766.0325927734375
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "ADD",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": 0.15000000596046448
-                },
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
-        },
-        {
-            "rid": "49ebdf2b-0968-4022-ac00-eeb1b2cccfdd",
-            "type": "ShaderNodeMath",
-            "name": "Math.005",
-            "label": "",
-            "loc": [
-                3151.37060546875,
-                600.9763793945312
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "ADD",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": 0.5
-                },
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
-        },
-        {
-            "rid": "8c9c7a66-333e-47e7-8be6-9ab7ae525765",
-            "type": "ShaderNodeVectorMath",
-            "name": "Vector Math.013",
-            "label": "",
-            "loc": [
-                3406.434326171875,
-                689.0164184570312
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "SCALE"
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
-                },
-                {
-                    "i": 2,
-                    "v": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ]
-                }
-            ]
-        },
-        {
-            "rid": "775f1f8b-d9f5-4a79-a441-13cd947c3e65",
-            "type": "ShaderNodeMath",
-            "name": "Math",
-            "label": "",
-            "loc": [
-                3435.93212890625,
-                1081.127197265625
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "GREATER_THAN",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": 0.49000000953674316
-                },
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
-        },
-        {
-            "rid": "1eabe385-cd76-4d9f-b4dd-ba2bb9f0cb15",
-            "type": "ShaderNodeMath",
-            "name": "Math.001",
-            "label": "",
-            "loc": [
-                3429.355712890625,
-                912.6272583007812
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "LESS_THAN",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 1,
-                    "v": 0.5099999904632568
-                },
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
-        },
-        {
-            "rid": "fd8dc2fb-6ba4-40a8-9251-305e8e5268f1",
-            "type": "ShaderNodeSeparateXYZ",
-            "name": "Separate XYZ.002",
-            "label": "",
-            "loc": [
-                2953.065673828125,
-                936.7879028320312
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": []
-        },
-        {
-            "rid": "d06b8ae8-a62b-40ad-a88d-4dd950e3a7d5",
-            "type": "ShaderNodeMath",
-            "name": "Math.002",
-            "label": "",
-            "loc": [
-                3683.697509765625,
-                1022.88720703125
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "MULTIPLY",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
-        },
-        {
-            "rid": "dda36292-1b75-47c8-949c-678e5f6d1de2",
-            "type": "ShaderNodeSeparateXYZ",
-            "name": "Separate XYZ.003",
-            "label": "",
-            "loc": [
-                2916.818359375,
-                692.8001708984375
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": []
-        },
-        {
-            "rid": "5af77e3b-9742-4cf4-b231-431ff3168994",
-            "type": "ShaderNodeTexImage",
-            "name": "Image Texture.001",
-            "label": "",
-            "loc": [
-                2372.103271484375,
-                788.9442138671875
-            ],
-            "dims": [
-                240.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {},
-            "inputs": []
-        },
-        {
-            "rid": "6b9c4f63-0a0a-4b17-b4dd-74a143364ed0",
-            "type": "ShaderNodeMath",
-            "name": "Math.003",
-            "label": "",
-            "loc": [
-                3982.327392578125,
-                969.45361328125
-            ],
-            "dims": [
-                140.0,
-                100.0
-            ],
-            "mute": false,
-            "hide": false,
-            "color": null,
-            "parent_rid": null,
-            "props": {
-                "operation": "MULTIPLY",
-                "use_clamp": false
-            },
-            "inputs": [
-                {
-                    "i": 2,
-                    "v": 0.5
-                }
-            ]
         }
     ],
     "links": [
@@ -1356,118 +991,34 @@
             "t_sock": 0
         },
         {
+            "f_rid": "beb830d7-2174-4532-9cc0-cee30a38fb26",
+            "f_sock": 0,
+            "t_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
+            "t_sock": 0
+        },
+        {
             "f_rid": "50136fd8-f55e-4cd9-8b91-b6a7c559daec",
             "f_sock": 0,
             "t_rid": "37748780-b47e-450b-b97b-54a6cd4c284b",
             "t_sock": 0
         },
         {
-            "f_rid": "a97ca975-c057-43ee-84b7-ccb36eb7fae2",
-            "f_sock": 2,
+            "f_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
+            "f_sock": 0,
+            "t_rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "24abedaa-d7f7-442e-9343-3add9c0bbeb7",
+            "f_sock": 0,
+            "t_rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "00f7fb1a-5b4f-4716-97fe-c233514a76cc",
+            "f_sock": 0,
             "t_rid": "b686d438-0965-4a6a-ba72-17f52bd83a18",
             "t_sock": 0
-        },
-        {
-            "f_rid": "5af77e3b-9742-4cf4-b231-431ff3168994",
-            "f_sock": 0,
-            "t_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "4664403b-5fca-40ab-81db-ab37c982e7c6",
-            "f_sock": 0,
-            "t_rid": "8c9c7a66-333e-47e7-8be6-9ab7ae525765",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "49ebdf2b-0968-4022-ac00-eeb1b2cccfdd",
-            "f_sock": 0,
-            "t_rid": "8c9c7a66-333e-47e7-8be6-9ab7ae525765",
-            "t_sock": 3
-        },
-        {
-            "f_rid": "8c9c7a66-333e-47e7-8be6-9ab7ae525765",
-            "f_sock": 0,
-            "t_rid": "d6505dfc-e9ca-493c-90d2-b481703e41bb",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
-            "f_sock": 0,
-            "t_rid": "fd8dc2fb-6ba4-40a8-9251-305e8e5268f1",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "fd8dc2fb-6ba4-40a8-9251-305e8e5268f1",
-            "f_sock": 2,
-            "t_rid": "1eabe385-cd76-4d9f-b4dd-ba2bb9f0cb15",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "775f1f8b-d9f5-4a79-a441-13cd947c3e65",
-            "f_sock": 0,
-            "t_rid": "d06b8ae8-a62b-40ad-a88d-4dd950e3a7d5",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "1eabe385-cd76-4d9f-b4dd-ba2bb9f0cb15",
-            "f_sock": 0,
-            "t_rid": "d06b8ae8-a62b-40ad-a88d-4dd950e3a7d5",
-            "t_sock": 1
-        },
-        {
-            "f_rid": "dda36292-1b75-47c8-949c-678e5f6d1de2",
-            "f_sock": 0,
-            "t_rid": "4664403b-5fca-40ab-81db-ab37c982e7c6",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "dda36292-1b75-47c8-949c-678e5f6d1de2",
-            "f_sock": 1,
-            "t_rid": "49ebdf2b-0968-4022-ac00-eeb1b2cccfdd",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "d9a19a1d-2293-4eee-854f-3113a61fdcf1",
-            "f_sock": 0,
-            "t_rid": "dda36292-1b75-47c8-949c-678e5f6d1de2",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "d6505dfc-e9ca-493c-90d2-b481703e41bb",
-            "f_sock": 0,
-            "t_rid": "a97ca975-c057-43ee-84b7-ccb36eb7fae2",
-            "t_sock": 7
-        },
-        {
-            "f_rid": "6b9c4f63-0a0a-4b17-b4dd-74a143364ed0",
-            "f_sock": 0,
-            "t_rid": "a97ca975-c057-43ee-84b7-ccb36eb7fae2",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "beb830d7-2174-4532-9cc0-cee30a38fb26",
-            "f_sock": 0,
-            "t_rid": "5af77e3b-9742-4cf4-b231-431ff3168994",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "fd8dc2fb-6ba4-40a8-9251-305e8e5268f1",
-            "f_sock": 2,
-            "t_rid": "775f1f8b-d9f5-4a79-a441-13cd947c3e65",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "d06b8ae8-a62b-40ad-a88d-4dd950e3a7d5",
-            "f_sock": 0,
-            "t_rid": "6b9c4f63-0a0a-4b17-b4dd-74a143364ed0",
-            "t_sock": 0
-        },
-        {
-            "f_rid": "d6505dfc-e9ca-493c-90d2-b481703e41bb",
-            "f_sock": 0,
-            "t_rid": "6b9c4f63-0a0a-4b17-b4dd-74a143364ed0",
-            "t_sock": 1
         }
     ],
     "interface": [],
