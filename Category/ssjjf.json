@@ -1,0 +1,2002 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "4.9.7"
+    },
+    "nodes": [
+        {
+            "rid": "n0",
+            "type": "NodeGroupInput",
+            "name": "Group Input",
+            "label": "",
+            "loc": [
+                -340.0,
+                0.0
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    -340.0,
+                    0.0
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "NodeGroupInput",
+                "bl_label": "Group Input",
+                "bl_description": "Expose connected data from inside a node group as inputs to its interface",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 80.0,
+                "bl_width_max": 400.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "rid": "n1",
+            "type": "NodeGroupOutput",
+            "name": "Group Output",
+            "label": "",
+            "loc": [
+                3187.644775390625,
+                9.568758964538574
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    3187.644775390625,
+                    9.568758964538574
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "NodeGroupOutput",
+                "bl_label": "Group Output",
+                "bl_description": "Output data from inside of a node group",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 80.0,
+                "bl_width_max": 400.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true
+            },
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "rid": "n2",
+            "type": "GeometryNodeJoinGeometry",
+            "name": "Join Geometry",
+            "label": "",
+            "loc": [
+                2967.5908203125,
+                52.556884765625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2967.5908203125,
+                    52.556884765625
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeJoinGeometry",
+                "bl_label": "Join Geometry",
+                "bl_description": "Merge separately generated geometries into a single one",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "rid": "n3",
+            "type": "GeometryNodeSetMaterial",
+            "name": "Set Material.001",
+            "label": "",
+            "loc": [
+                2747.2001953125,
+                92.0677490234375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2747.2001953125,
+                    92.0677490234375
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeSetMaterial",
+                "bl_label": "Set Material",
+                "bl_description": "Assign a material to geometry elements",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": {
+                        "__id__": "MATERIAL",
+                        "name": "Material.001"
+                    }
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n4",
+            "type": "GeometryNodeCurveToMesh",
+            "name": "Curve to Mesh",
+            "label": "",
+            "loc": [
+                2526.800048828125,
+                75.58342742919922
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2526.800048828125,
+                    75.58342742919922
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeCurveToMesh",
+                "bl_label": "Curve to Mesh",
+                "bl_description": "Convert curves into a mesh, optionally with a custom profile shape defined by curves",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": false
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n5",
+            "type": "GeometryNodeSetCurveRadius",
+            "name": "Set Curve Radius",
+            "label": "",
+            "loc": [
+                2293.5478515625,
+                89.66758728027344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2293.5478515625,
+                    89.66758728027344
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeSetCurveRadius",
+                "bl_label": "Set Curve Radius",
+                "bl_description": "Set the radius of the curve at each control point",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n6",
+            "type": "GeometryNodeCurvePrimitiveCircle",
+            "name": "Curve Circle",
+            "label": "",
+            "loc": [
+                2150.109619140625,
+                -53.522911071777344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2150.109619140625,
+                    -53.522911071777344
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeCurvePrimitiveCircle",
+                "bl_label": "Curve Circle",
+                "bl_description": "Generate a poly spline circle",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "RADIUS"
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 8
+                },
+                {
+                    "i": 1,
+                    "v": [
+                        -1.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 4,
+                    "v": 0.10000000149011612
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n7",
+            "type": "GeometryNodeSplineParameter",
+            "name": "Spline Parameter",
+            "label": "",
+            "loc": [
+                1947.8626708984375,
+                -83.41902923583984
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1947.8626708984375,
+                    -83.41902923583984
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeSplineParameter",
+                "bl_label": "Spline Parameter",
+                "bl_description": "Retrieve how far along each spline a control point is",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": 0.0
+                },
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 0
+                }
+            ]
+        },
+        {
+            "rid": "n8",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                2000.8619384765625,
+                -1.381168007850647
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": true,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2000.8619384765625,
+                    -1.381168007850647
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeValToRGB",
+                "bl_label": "Color Ramp",
+                "bl_description": "Map values to colors with the use of a gradient",
+                "bl_icon": "NONE",
+                "bl_width_default": 240.0,
+                "bl_width_min": 140.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 0.0
+                }
+            ],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.0,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 1.0,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "n9",
+            "type": "GeometryNodeCurveEndpointSelection",
+            "name": "Endpoint Selection",
+            "label": "",
+            "loc": [
+                1972.0279541015625,
+                197.62149047851562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1972.0279541015625,
+                    197.62149047851562
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeCurveEndpointSelection",
+                "bl_label": "Endpoint Selection",
+                "bl_description": "Provide a selection for an arbitrary number of endpoints in each spline",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 42
+                },
+                {
+                    "i": 1,
+                    "v": 0
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": false
+                }
+            ]
+        },
+        {
+            "rid": "n10",
+            "type": "FunctionNodeBooleanMath",
+            "name": "Boolean Math",
+            "label": "",
+            "loc": [
+                2233.453125,
+                286.8348693847656
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2233.453125,
+                    286.8348693847656
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "FunctionNodeBooleanMath",
+                "bl_label": "Boolean Math",
+                "bl_description": "",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "operation": "NOT"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": false
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": false
+                }
+            ]
+        },
+        {
+            "rid": "n11",
+            "type": "GeometryNodeSetMaterial",
+            "name": "Set Material",
+            "label": "",
+            "loc": [
+                2652.800048828125,
+                286.81866455078125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2652.800048828125,
+                    286.81866455078125
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeSetMaterial",
+                "bl_label": "Set Material",
+                "bl_description": "Assign a material to geometry elements",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": {
+                        "__id__": "MATERIAL",
+                        "name": "Material.002"
+                    }
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n12",
+            "type": "GeometryNodeTrimCurve",
+            "name": "Trim Curve",
+            "label": "",
+            "loc": [
+                1778.000244140625,
+                52.035987854003906
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1778.000244140625,
+                    52.035987854003906
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeTrimCurve",
+                "bl_label": "Trim Curve",
+                "bl_description": "Shorten curves by removing portions at the start or end",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "FACTOR"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 0.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.0
+                },
+                {
+                    "i": 5,
+                    "v": 1.0
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n13",
+            "type": "GeometryNodeSetPosition",
+            "name": "Set Position",
+            "label": "",
+            "loc": [
+                1557.777099609375,
+                9.084699630737305
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1557.777099609375,
+                    9.084699630737305
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeSetPosition",
+                "bl_label": "Set Position",
+                "bl_description": "Set the location of each point",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n14",
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "label": "",
+            "loc": [
+                1528.199462890625,
+                -199.6498565673828
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1528.199462890625,
+                    -199.6498565673828
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeMapRange",
+                "bl_label": "Map Range",
+                "bl_description": "Remap a value from a range to a target range",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "clamp": false,
+                "interpolation_type": "LINEAR",
+                "data_type": "FLOAT"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.18000000715255737
+                },
+                {
+                    "i": 2,
+                    "v": 0.2199999988079071
+                },
+                {
+                    "i": 3,
+                    "v": 0.3199999928474426
+                },
+                {
+                    "i": 4,
+                    "v": 0.4699999988079071
+                },
+                {
+                    "i": 5,
+                    "v": 4.0
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 7,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 8,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 9,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 10,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 11,
+                    "v": [
+                        4.0,
+                        4.0,
+                        4.0
+                    ]
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "n15",
+            "type": "ShaderNodeMath",
+            "name": "Math",
+            "label": "",
+            "loc": [
+                1337.9998779296875,
+                -135.21731567382812
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1337.9998779296875,
+                    -135.21731567382812
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeMath",
+                "bl_label": "Math",
+                "bl_description": "Perform math operations",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "operation": "MULTIPLY",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 3.5999999046325684
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "n16",
+            "type": "ShaderNodeTexNoise",
+            "name": "Musgrave Texture",
+            "label": "",
+            "loc": [
+                1108.3662109375,
+                -273.1936950683594
+            ],
+            "dims": [
+                150.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1108.3662109375,
+                    -273.1936950683594
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": true,
+                "bl_idname": "ShaderNodeTexNoise",
+                "bl_label": "Noise Texture",
+                "bl_description": "Generate fractal Perlin noise",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "noise_dimensions": "4D",
+                "noise_type": "RIDGED_MULTIFRACTAL",
+                "normalize": false
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 7.119999885559082
+                },
+                {
+                    "i": 2,
+                    "v": 0.30000001192092896
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.25
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "v": 0.0
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": 0.0
+                },
+                {
+                    "i": 1,
+                    "v": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929,
+                        1.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n17",
+            "type": "GeometryNodeResampleCurve",
+            "name": "Resample Curve",
+            "label": "",
+            "loc": [
+                1015.0623168945312,
+                24.75341796875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1015.0623168945312,
+                    24.75341796875
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeResampleCurve",
+                "bl_label": "Resample Curve",
+                "bl_description": "Generate a poly spline for each input spline",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "COUNT",
+                "keep_last_segment": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 33
+                },
+                {
+                    "i": 3,
+                    "v": 0.10000000149011612
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n18",
+            "type": "GeometryNodeRealizeInstances",
+            "name": "Realize Instances",
+            "label": "",
+            "loc": [
+                795.2000122070312,
+                -23.62806510925293
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    795.2000122070312,
+                    -23.62806510925293
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeRealizeInstances",
+                "bl_label": "Realize Instances",
+                "bl_description": "Convert instances into real geometry data",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": true
+                },
+                {
+                    "i": 3,
+                    "v": 0
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n19",
+            "type": "GeometryNodeInstanceOnPoints",
+            "name": "Instance on Points",
+            "label": "",
+            "loc": [
+                575.2867431640625,
+                9.891169548034668
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    575.2867431640625,
+                    9.891169548034668
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeInstanceOnPoints",
+                "bl_label": "Instance on Points",
+                "bl_description": "Generate a reference to geometry at each of the input points, without duplicating its underlying data",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 3,
+                    "v": false
+                },
+                {
+                    "i": 4,
+                    "v": 0
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        1.0,
+                        1.0,
+                        8.799999237060547
+                    ]
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n20",
+            "type": "GeometryNodeMeshToPoints",
+            "name": "Mesh to Points",
+            "label": "",
+            "loc": [
+                376.45355224609375,
+                26.881725311279297
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    376.45355224609375,
+                    26.881725311279297
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeMeshToPoints",
+                "bl_label": "Mesh to Points",
+                "bl_description": "Generate a point cloud from a mesh's vertices",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "VERTICES"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 0.05000000074505806
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n21",
+            "type": "GeometryNodeCurvePrimitiveLine",
+            "name": "Curve Line",
+            "label": "",
+            "loc": [
+                391.1563720703125,
+                -164.7655029296875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": true,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    391.1563720703125,
+                    -164.7655029296875
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeCurvePrimitiveLine",
+                "bl_label": "Curve Line",
+                "bl_description": "Generate a poly spline line with two points",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "POINTS"
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n22",
+            "type": "FunctionNodeAlignEulerToVector",
+            "name": "Align Euler to Vector",
+            "label": "",
+            "loc": [
+                389.9419250488281,
+                -235.8185577392578
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    389.9419250488281,
+                    -235.8185577392578
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "FunctionNodeAlignEulerToVector",
+                "bl_label": "Align Euler to Vector",
+                "bl_description": "",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "axis": "Z",
+                "pivot_axis": "AUTO"
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 1.0
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n23",
+            "type": "GeometryNodeCaptureAttribute",
+            "name": "Capture Attribute",
+            "label": "",
+            "loc": [
+                156.79998779296875,
+                68.0763168334961
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    156.79998779296875,
+                    68.0763168334961
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeCaptureAttribute",
+                "bl_label": "Capture Attribute",
+                "bl_description": "Store the result of a field on a geometry and output the data as a node socket. Allows remembering or interpolating data as the geometry changes, such as positions before deformation",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "active_index": 0,
+                "domain": "POINT"
+            },
+            "items": {
+                "capture_items": [
+                    {
+                        "name": "Value",
+                        "data_type": "FLOAT_VECTOR"
+                    }
+                ]
+            },
+            "inputs": [],
+            "outputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n24",
+            "type": "GeometryNodeMeshIcoSphere",
+            "name": "Ico Sphere",
+            "label": "",
+            "loc": [
+                -63.507362365722656,
+                13.280401229858398
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    -63.507362365722656,
+                    13.280401229858398
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeMeshIcoSphere",
+                "bl_label": "Ico Sphere",
+                "bl_description": "Generate a spherical mesh that consists of equally sized triangles",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 1.0
+                },
+                {
+                    "i": 1,
+                    "v": 5
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n25",
+            "type": "GeometryNodeInputNormal",
+            "name": "Normal",
+            "label": "",
+            "loc": [
+                -67.2709732055664,
+                -142.69473266601562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    -67.2709732055664,
+                    -142.69473266601562
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeInputNormal",
+                "bl_label": "Normal",
+                "bl_description": "Retrieve a unit length vector indicating the direction pointing away from the geometry at each element",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "legacy_corner_normals": true
+            },
+            "inputs": [],
+            "outputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n26",
+            "type": "GeometryNodeMeshIcoSphere",
+            "name": "Ico Sphere.001",
+            "label": "",
+            "loc": [
+                1965.159423828125,
+                339.6108703613281
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1965.159423828125,
+                    339.6108703613281
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeMeshIcoSphere",
+                "bl_label": "Ico Sphere",
+                "bl_description": "Generate a spherical mesh that consists of equally sized triangles",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 0.05000000074505806
+                },
+                {
+                    "i": 1,
+                    "v": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n27",
+            "type": "GeometryNodeResampleCurve",
+            "name": "Resample Curve.001",
+            "label": "",
+            "loc": [
+                1931.7427978515625,
+                527.9422607421875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    1931.7427978515625,
+                    527.9422607421875
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeResampleCurve",
+                "bl_label": "Resample Curve",
+                "bl_description": "Generate a poly spline for each input spline",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "COUNT",
+                "keep_last_segment": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 43
+                },
+                {
+                    "i": 3,
+                    "v": 0.10000000149011612
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n28",
+            "type": "GeometryNodeInstanceOnPoints",
+            "name": "Instance on Points.001",
+            "label": "",
+            "loc": [
+                2433.148193359375,
+                427.8592834472656
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2433.148193359375,
+                    427.8592834472656
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeInstanceOnPoints",
+                "bl_label": "Instance on Points",
+                "bl_description": "Generate a reference to geometry at each of the input points, without duplicating its underlying data",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [
+                {
+                    "i": 3,
+                    "v": false
+                },
+                {
+                    "i": 4,
+                    "v": 0
+                },
+                {
+                    "i": 5,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        0.6000000238418579,
+                        0.6000000238418579,
+                        0.6000000238418579
+                    ]
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n29",
+            "type": "GeometryNodeTrimCurve",
+            "name": "Trim Curve.001",
+            "label": "",
+            "loc": [
+                2189.98291015625,
+                532.9361572265625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    2189.98291015625,
+                    532.9361572265625
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "GeometryNodeTrimCurve",
+                "bl_label": "Trim Curve",
+                "bl_description": "Shorten curves by removing portions at the start or end",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "mode": "FACTOR"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 0.0
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.0
+                },
+                {
+                    "i": 5,
+                    "v": 1.0
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "n23",
+            "f_sock": 0,
+            "t_rid": "n20",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n20",
+            "f_sock": 0,
+            "t_rid": "n19",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n21",
+            "f_sock": 0,
+            "t_rid": "n19",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "n24",
+            "f_sock": 0,
+            "t_rid": "n23",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n25",
+            "f_sock": 0,
+            "t_rid": "n23",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "n22",
+            "f_sock": 0,
+            "t_rid": "n19",
+            "t_sock": 5
+        },
+        {
+            "f_rid": "n23",
+            "f_sock": 1,
+            "t_rid": "n22",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "n17",
+            "f_sock": 0,
+            "t_rid": "n13",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n15",
+            "f_sock": 0,
+            "t_rid": "n13",
+            "t_sock": 3
+        },
+        {
+            "f_rid": "n18",
+            "f_sock": 0,
+            "t_rid": "n17",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n19",
+            "f_sock": 0,
+            "t_rid": "n18",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n13",
+            "f_sock": 0,
+            "t_rid": "n12",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n14",
+            "f_sock": 0,
+            "t_rid": "n12",
+            "t_sock": 3
+        },
+        {
+            "f_rid": "n16",
+            "f_sock": 0,
+            "t_rid": "n14",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n5",
+            "f_sock": 0,
+            "t_rid": "n4",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n6",
+            "f_sock": 0,
+            "t_rid": "n4",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "n8",
+            "f_sock": 0,
+            "t_rid": "n5",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "n7",
+            "f_sock": 0,
+            "t_rid": "n8",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n16",
+            "f_sock": 0,
+            "t_rid": "n15",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n29",
+            "f_sock": 0,
+            "t_rid": "n28",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n10",
+            "f_sock": 0,
+            "t_rid": "n28",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "n9",
+            "f_sock": 0,
+            "t_rid": "n10",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n26",
+            "f_sock": 0,
+            "t_rid": "n28",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "n2",
+            "f_sock": 0,
+            "t_rid": "n1",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n3",
+            "f_sock": 0,
+            "t_rid": "n2",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n12",
+            "f_sock": 0,
+            "t_rid": "n5",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n11",
+            "f_sock": 0,
+            "t_rid": "n2",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n12",
+            "f_sock": 0,
+            "t_rid": "n27",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n28",
+            "f_sock": 0,
+            "t_rid": "n11",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n4",
+            "f_sock": 0,
+            "t_rid": "n3",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "n27",
+            "f_sock": 0,
+            "t_rid": "n29",
+            "t_sock": 0
+        }
+    ],
+    "interface": [
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "OUTPUT",
+            "order": 0,
+            "subtype": "NONE"
+        },
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "INPUT",
+            "order": 1,
+            "subtype": "NONE"
+        }
+    ],
+    "tree_type": "GeometryNodeTree",
+    "drivers": [
+        {
+            "rid": "n16",
+            "tail": ".inputs[1].default_value",
+            "index": 0,
+            "driver": {
+                "type": "SCRIPTED",
+                "expression": "frame/25",
+                "use_self": false,
+                "variables": []
+            }
+        }
+    ]
+}
