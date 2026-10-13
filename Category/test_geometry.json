@@ -1,0 +1,1260 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "4.9.5"
+    },
+    "nodes": [
+        {
+            "rid": "75325ace-951b-4117-b950-1ba6733f2146",
+            "type": "NodeGroupInput",
+            "name": "Group Input",
+            "label": "",
+            "loc": [
+                -340.0,
+                0.0
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "324dbdff-199f-4991-95c7-a5cdfd62e9dd",
+            "type": "NodeGroupOutput",
+            "name": "Group Output",
+            "label": "",
+            "loc": [
+                3187.644775390625,
+                9.568758964538574
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "84d8342a-0feb-41c6-ba52-41cf600eca5d",
+            "type": "GeometryNodeJoinGeometry",
+            "name": "Join Geometry",
+            "label": "",
+            "loc": [
+                2967.5908203125,
+                52.556884765625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "b22be9be-58b0-4c2d-b852-efbd876704c0",
+            "type": "GeometryNodeSetMaterial",
+            "name": "Set Material.001",
+            "label": "",
+            "loc": [
+                2747.2001953125,
+                92.0677490234375
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": {
+                        "__id__": "MATERIAL",
+                        "name": "Material.001"
+                    }
+                }
+            ]
+        },
+        {
+            "rid": "03f3b7dd-b516-431c-896d-4c7e9d5d352d",
+            "type": "GeometryNodeCurveToMesh",
+            "name": "Curve to Mesh",
+            "label": "",
+            "loc": [
+                2526.800048828125,
+                75.58342742919922
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": false
+                }
+            ]
+        },
+        {
+            "rid": "029800be-c718-4fa0-92a0-dfbd99e38b0f",
+            "type": "GeometryNodeSetCurveRadius",
+            "name": "Set Curve Radius",
+            "label": "",
+            "loc": [
+                2293.5478515625,
+                89.66758728027344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                }
+            ]
+        },
+        {
+            "rid": "eb577037-f19e-4c15-abec-b15fa8fda006",
+            "type": "GeometryNodeCurvePrimitiveCircle",
+            "name": "Curve Circle",
+            "label": "",
+            "loc": [
+                2150.109619140625,
+                -53.522911071777344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 8
+                },
+                {
+                    "i": 1,
+                    "v": [
+                        -1.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 4,
+                    "v": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "rid": "67aa2b29-add3-4929-9d70-61ed96a44a35",
+            "type": "GeometryNodeSplineParameter",
+            "name": "Spline Parameter",
+            "label": "",
+            "loc": [
+                1947.8626708984375,
+                -83.41902923583984
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "0370e5e2-980c-4baf-8eb6-8dff30e7293b",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                2000.8619384765625,
+                -1.381168007850647
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": true,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.0,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 1.0,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "707e6f7a-2e7a-46dc-82e8-e1ae95f85ea5",
+            "type": "GeometryNodeCurveEndpointSelection",
+            "name": "Endpoint Selection",
+            "label": "",
+            "loc": [
+                1972.0279541015625,
+                197.62149047851562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 42
+                },
+                {
+                    "i": 1,
+                    "v": 0
+                }
+            ]
+        },
+        {
+            "rid": "c678ffc0-6ed8-41e7-bc5a-cfe1f7adb015",
+            "type": "FunctionNodeBooleanMath",
+            "name": "Boolean Math",
+            "label": "",
+            "loc": [
+                2233.453125,
+                286.8348693847656
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "NOT"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": false
+                }
+            ]
+        },
+        {
+            "rid": "e2f7d411-3c5f-4a5e-8b64-27c8cebd47b2",
+            "type": "GeometryNodeSetMaterial",
+            "name": "Set Material",
+            "label": "",
+            "loc": [
+                2652.800048828125,
+                286.81866455078125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": {
+                        "__id__": "MATERIAL",
+                        "name": "Material.002"
+                    }
+                }
+            ]
+        },
+        {
+            "rid": "590918ca-cd98-4544-9a28-15396e4be9f6",
+            "type": "GeometryNodeTrimCurve",
+            "name": "Trim Curve",
+            "label": "",
+            "loc": [
+                1778.000244140625,
+                52.035987854003906
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 0.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.0
+                },
+                {
+                    "i": 5,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "33982d9b-5f38-4902-853d-f4fd4d4e1766",
+            "type": "GeometryNodeSetPosition",
+            "name": "Set Position",
+            "label": "",
+            "loc": [
+                1557.777099609375,
+                9.084699630737305
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "b7810446-2bcb-4bba-8160-525bb24f79b6",
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "label": "",
+            "loc": [
+                1528.199462890625,
+                -199.6498565673828
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "data_type": "FLOAT"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.18000000715255737
+                },
+                {
+                    "i": 2,
+                    "v": 0.2199999988079071
+                },
+                {
+                    "i": 3,
+                    "v": 0.3199999928474426
+                },
+                {
+                    "i": 4,
+                    "v": 0.4699999988079071
+                },
+                {
+                    "i": 5,
+                    "v": 4.0
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 7,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 8,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 9,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 10,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 11,
+                    "v": [
+                        4.0,
+                        4.0,
+                        4.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "09d47c42-0c60-4d84-9575-9344a6384063",
+            "type": "ShaderNodeMath",
+            "name": "Math",
+            "label": "",
+            "loc": [
+                1337.9998779296875,
+                -135.21731567382812
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 3.5999999046325684
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ]
+        },
+        {
+            "rid": "ad2f5628-5a93-4799-a159-cc51f840c88a",
+            "type": "ShaderNodeTexNoise",
+            "name": "Musgrave Texture",
+            "label": "",
+            "loc": [
+                1108.3662109375,
+                -273.1936950683594
+            ],
+            "dims": [
+                150.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 7.119999885559082
+                },
+                {
+                    "i": 2,
+                    "v": 0.30000001192092896
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.25
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "c9278c6e-8fbd-4a49-9c0a-96c892677c94",
+            "type": "GeometryNodeResampleCurve",
+            "name": "Resample Curve",
+            "label": "",
+            "loc": [
+                1015.0623168945312,
+                24.75341796875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 33
+                },
+                {
+                    "i": 3,
+                    "v": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "rid": "fa8ba94b-eeaf-47fa-9deb-1302a5d838e7",
+            "type": "GeometryNodeRealizeInstances",
+            "name": "Realize Instances",
+            "label": "",
+            "loc": [
+                795.2000122070312,
+                -23.62806510925293
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": true
+                },
+                {
+                    "i": 3,
+                    "v": 0
+                }
+            ]
+        },
+        {
+            "rid": "051db674-47d3-4df4-84dc-b7cc40befc23",
+            "type": "GeometryNodeInstanceOnPoints",
+            "name": "Instance on Points",
+            "label": "",
+            "loc": [
+                575.2867431640625,
+                9.891169548034668
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 3,
+                    "v": false
+                },
+                {
+                    "i": 4,
+                    "v": 0
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        1.0,
+                        1.0,
+                        8.799999237060547
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "3af17f98-960d-479f-915e-f60aba784329",
+            "type": "GeometryNodeMeshToPoints",
+            "name": "Mesh to Points",
+            "label": "",
+            "loc": [
+                376.45355224609375,
+                26.881725311279297
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 0.05000000074505806
+                }
+            ]
+        },
+        {
+            "rid": "85bbf480-6249-45cc-9c53-1cd2dc862c04",
+            "type": "GeometryNodeCurvePrimitiveLine",
+            "name": "Curve Line",
+            "label": "",
+            "loc": [
+                391.1563720703125,
+                -164.7655029296875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": true,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "6f9d0508-4436-4b6b-8d39-a681cb0f8238",
+            "type": "FunctionNodeAlignEulerToVector",
+            "name": "Align Euler to Vector",
+            "label": "",
+            "loc": [
+                389.9419250488281,
+                -235.8185577392578
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 1.0
+                }
+            ]
+        },
+        {
+            "rid": "934ec719-ef01-47b3-a53a-a9a2386dd35d",
+            "type": "GeometryNodeCaptureAttribute",
+            "name": "Capture Attribute",
+            "label": "",
+            "loc": [
+                156.79998779296875,
+                68.0763168334961
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "domain": "POINT"
+            },
+            "inputs": []
+        },
+        {
+            "rid": "33687d21-3f1d-4193-b7ba-edfe4f55ccec",
+            "type": "GeometryNodeMeshIcoSphere",
+            "name": "Ico Sphere",
+            "label": "",
+            "loc": [
+                -63.507362365722656,
+                13.280401229858398
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 1.0
+                },
+                {
+                    "i": 1,
+                    "v": 5
+                }
+            ]
+        },
+        {
+            "rid": "12a51663-577a-4465-bb5e-d0d963a0dfee",
+            "type": "GeometryNodeInputNormal",
+            "name": "Normal",
+            "label": "",
+            "loc": [
+                -67.2709732055664,
+                -142.69473266601562
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "59fa72d7-1337-4e4b-b092-bca4e1d451ab",
+            "type": "GeometryNodeMeshIcoSphere",
+            "name": "Ico Sphere.001",
+            "label": "",
+            "loc": [
+                1965.159423828125,
+                339.6108703613281
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 0.05000000074505806
+                },
+                {
+                    "i": 1,
+                    "v": 1
+                }
+            ]
+        },
+        {
+            "rid": "b60b972d-e236-4d31-91d5-66e504152bf3",
+            "type": "GeometryNodeResampleCurve",
+            "name": "Resample Curve.001",
+            "label": "",
+            "loc": [
+                1931.7427978515625,
+                527.9422607421875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 43
+                },
+                {
+                    "i": 3,
+                    "v": 0.10000000149011612
+                }
+            ]
+        },
+        {
+            "rid": "3d49df88-4318-4012-89d7-fd0bba9ad5b5",
+            "type": "GeometryNodeInstanceOnPoints",
+            "name": "Instance on Points.001",
+            "label": "",
+            "loc": [
+                2433.148193359375,
+                427.8592834472656
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 3,
+                    "v": false
+                },
+                {
+                    "i": 4,
+                    "v": 0
+                },
+                {
+                    "i": 5,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 6,
+                    "v": [
+                        0.6000000238418579,
+                        0.6000000238418579,
+                        0.6000000238418579
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "eb2a8cf8-6051-4911-96d5-caec02bfddfb",
+            "type": "GeometryNodeTrimCurve",
+            "name": "Trim Curve.001",
+            "label": "",
+            "loc": [
+                2189.98291015625,
+                532.9361572265625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": true
+                },
+                {
+                    "i": 2,
+                    "v": 0.0
+                },
+                {
+                    "i": 3,
+                    "v": 1.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.0
+                },
+                {
+                    "i": 5,
+                    "v": 1.0
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "934ec719-ef01-47b3-a53a-a9a2386dd35d",
+            "f_sock": 0,
+            "t_rid": "3af17f98-960d-479f-915e-f60aba784329",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "3af17f98-960d-479f-915e-f60aba784329",
+            "f_sock": 0,
+            "t_rid": "051db674-47d3-4df4-84dc-b7cc40befc23",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "85bbf480-6249-45cc-9c53-1cd2dc862c04",
+            "f_sock": 0,
+            "t_rid": "051db674-47d3-4df4-84dc-b7cc40befc23",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "33687d21-3f1d-4193-b7ba-edfe4f55ccec",
+            "f_sock": 0,
+            "t_rid": "934ec719-ef01-47b3-a53a-a9a2386dd35d",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "12a51663-577a-4465-bb5e-d0d963a0dfee",
+            "f_sock": 0,
+            "t_rid": "934ec719-ef01-47b3-a53a-a9a2386dd35d",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "6f9d0508-4436-4b6b-8d39-a681cb0f8238",
+            "f_sock": 0,
+            "t_rid": "051db674-47d3-4df4-84dc-b7cc40befc23",
+            "t_sock": 5
+        },
+        {
+            "f_rid": "934ec719-ef01-47b3-a53a-a9a2386dd35d",
+            "f_sock": 1,
+            "t_rid": "6f9d0508-4436-4b6b-8d39-a681cb0f8238",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "c9278c6e-8fbd-4a49-9c0a-96c892677c94",
+            "f_sock": 0,
+            "t_rid": "33982d9b-5f38-4902-853d-f4fd4d4e1766",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "09d47c42-0c60-4d84-9575-9344a6384063",
+            "f_sock": 0,
+            "t_rid": "33982d9b-5f38-4902-853d-f4fd4d4e1766",
+            "t_sock": 3
+        },
+        {
+            "f_rid": "fa8ba94b-eeaf-47fa-9deb-1302a5d838e7",
+            "f_sock": 0,
+            "t_rid": "c9278c6e-8fbd-4a49-9c0a-96c892677c94",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "051db674-47d3-4df4-84dc-b7cc40befc23",
+            "f_sock": 0,
+            "t_rid": "fa8ba94b-eeaf-47fa-9deb-1302a5d838e7",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "33982d9b-5f38-4902-853d-f4fd4d4e1766",
+            "f_sock": 0,
+            "t_rid": "590918ca-cd98-4544-9a28-15396e4be9f6",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b7810446-2bcb-4bba-8160-525bb24f79b6",
+            "f_sock": 0,
+            "t_rid": "590918ca-cd98-4544-9a28-15396e4be9f6",
+            "t_sock": 3
+        },
+        {
+            "f_rid": "ad2f5628-5a93-4799-a159-cc51f840c88a",
+            "f_sock": 0,
+            "t_rid": "b7810446-2bcb-4bba-8160-525bb24f79b6",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "029800be-c718-4fa0-92a0-dfbd99e38b0f",
+            "f_sock": 0,
+            "t_rid": "03f3b7dd-b516-431c-896d-4c7e9d5d352d",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "eb577037-f19e-4c15-abec-b15fa8fda006",
+            "f_sock": 0,
+            "t_rid": "03f3b7dd-b516-431c-896d-4c7e9d5d352d",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "0370e5e2-980c-4baf-8eb6-8dff30e7293b",
+            "f_sock": 0,
+            "t_rid": "029800be-c718-4fa0-92a0-dfbd99e38b0f",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "67aa2b29-add3-4929-9d70-61ed96a44a35",
+            "f_sock": 0,
+            "t_rid": "0370e5e2-980c-4baf-8eb6-8dff30e7293b",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "ad2f5628-5a93-4799-a159-cc51f840c88a",
+            "f_sock": 0,
+            "t_rid": "09d47c42-0c60-4d84-9575-9344a6384063",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "eb2a8cf8-6051-4911-96d5-caec02bfddfb",
+            "f_sock": 0,
+            "t_rid": "3d49df88-4318-4012-89d7-fd0bba9ad5b5",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "c678ffc0-6ed8-41e7-bc5a-cfe1f7adb015",
+            "f_sock": 0,
+            "t_rid": "3d49df88-4318-4012-89d7-fd0bba9ad5b5",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "707e6f7a-2e7a-46dc-82e8-e1ae95f85ea5",
+            "f_sock": 0,
+            "t_rid": "c678ffc0-6ed8-41e7-bc5a-cfe1f7adb015",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "59fa72d7-1337-4e4b-b092-bca4e1d451ab",
+            "f_sock": 0,
+            "t_rid": "3d49df88-4318-4012-89d7-fd0bba9ad5b5",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "84d8342a-0feb-41c6-ba52-41cf600eca5d",
+            "f_sock": 0,
+            "t_rid": "324dbdff-199f-4991-95c7-a5cdfd62e9dd",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b22be9be-58b0-4c2d-b852-efbd876704c0",
+            "f_sock": 0,
+            "t_rid": "84d8342a-0feb-41c6-ba52-41cf600eca5d",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "590918ca-cd98-4544-9a28-15396e4be9f6",
+            "f_sock": 0,
+            "t_rid": "029800be-c718-4fa0-92a0-dfbd99e38b0f",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "e2f7d411-3c5f-4a5e-8b64-27c8cebd47b2",
+            "f_sock": 0,
+            "t_rid": "84d8342a-0feb-41c6-ba52-41cf600eca5d",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "590918ca-cd98-4544-9a28-15396e4be9f6",
+            "f_sock": 0,
+            "t_rid": "b60b972d-e236-4d31-91d5-66e504152bf3",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "3d49df88-4318-4012-89d7-fd0bba9ad5b5",
+            "f_sock": 0,
+            "t_rid": "e2f7d411-3c5f-4a5e-8b64-27c8cebd47b2",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "03f3b7dd-b516-431c-896d-4c7e9d5d352d",
+            "f_sock": 0,
+            "t_rid": "b22be9be-58b0-4c2d-b852-efbd876704c0",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b60b972d-e236-4d31-91d5-66e504152bf3",
+            "f_sock": 0,
+            "t_rid": "eb2a8cf8-6051-4911-96d5-caec02bfddfb",
+            "t_sock": 0
+        }
+    ],
+    "interface": [
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "OUTPUT",
+            "order": 0,
+            "subtype": "NONE"
+        },
+        {
+            "name": "Geometry",
+            "type": "NodeSocketGeometry",
+            "in_out": "INPUT",
+            "order": 1,
+            "subtype": "NONE"
+        }
+    ],
+    "tree_type": "GeometryNodeTree"
+}
