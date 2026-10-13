@@ -1,0 +1,796 @@
+{
+    "meta": {
+        "blender": "4.1.1",
+        "addon": "4.9.4"
+    },
+    "nodes": [
+        {
+            "rid": "972a0393-dc62-4640-af5a-a6fbe793d858",
+            "type": "NodeFrame",
+            "name": "フレーム",
+            "label": "",
+            "loc": [
+                0.0,
+                0.0
+            ],
+            "dims": [
+                641.5999755859375,
+                244.79998779296875
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "ef16014b-9779-4239-9e61-b4858e6b2fec",
+            "type": "ShaderNodeTexCoord",
+            "name": "テクスチャ座標",
+            "label": "",
+            "loc": [
+                -648.1260986328125,
+                205.15440368652344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "b60cb4c0-3058-4793-9e24-fd299c8973e6",
+            "type": "ShaderNodeMapping",
+            "name": "マッピング",
+            "label": "",
+            "loc": [
+                -468.1260986328125,
+                205.15440368652344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": "<Vector (0.0000, 0.0000, 0.0000)>"
+                },
+                {
+                    "i": 2,
+                    "v": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+                },
+                {
+                    "i": 3,
+                    "v": "<Vector (1.0000, 1.0000, 1.0000)>"
+                }
+            ]
+        },
+        {
+            "rid": "9d1c5ea9-0dbe-443e-8da6-b3237d03c773",
+            "type": "ShaderNodeTexNoise",
+            "name": "ノイズテクスチャ",
+            "label": "",
+            "loc": [
+                -288.1260986328125,
+                245.15440368652344
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 3.0
+                },
+                {
+                    "i": 3,
+                    "v": 12.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.7749999761581421
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "c09eff82-9fad-41bd-86f5-e13dfa67b9ca",
+            "type": "ShaderNodeValToRGB",
+            "name": "カラーランプ",
+            "label": "",
+            "loc": [
+                -86.98562622070312,
+                224.6522674560547
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.495454341173172,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.6181820631027222,
+                        "color": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "95f7e7f4-0ce4-4880-9270-43a3003f3f64",
+            "type": "NodeReroute",
+            "name": "リルート",
+            "label": "",
+            "loc": [
+                203.25033569335938,
+                -114.1536865234375
+            ],
+            "dims": [
+                16.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "879e92fc-0244-47b0-a358-2f27c9e348dd",
+            "type": "ShaderNodeMath",
+            "name": "数式",
+            "label": "",
+            "loc": [
+                252.0,
+                186.70899963378906
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": "972a0393-dc62-4640-af5a-a6fbe793d858",
+            "props": {
+                "operation": "MINIMUM",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.9990000128746033
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ]
+        },
+        {
+            "rid": "3f6f8899-89ad-480b-be23-948e42b0e105",
+            "type": "ShaderNodeMath",
+            "name": "数式.001",
+            "label": "",
+            "loc": [
+                475.6707458496094,
+                154.38238525390625
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": "972a0393-dc62-4640-af5a-a6fbe793d858",
+            "props": {
+                "operation": "LOGARITHM",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 0.9990000128746033
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ]
+        },
+        {
+            "rid": "e4a5bc34-260c-4727-84f1-d070660ac8ec",
+            "type": "NodeReroute",
+            "name": "リルート.001",
+            "label": "",
+            "loc": [
+                641.6297607421875,
+                -102.80636596679688
+            ],
+            "dims": [
+                16.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "44fd7df1-2599-4406-8bb6-53f817f4c9a4",
+            "type": "ShaderNodeMath",
+            "name": "数式.002",
+            "label": "",
+            "loc": [
+                693.4498291015625,
+                150.17356872558594
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": "972a0393-dc62-4640-af5a-a6fbe793d858",
+            "props": {
+                "operation": "MULTIPLY",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ]
+        },
+        {
+            "rid": "8a0dcab5-703b-4657-9a6a-ca13365a749f",
+            "type": "ShaderNodeMath",
+            "name": "数式.003",
+            "label": "",
+            "loc": [
+                893.0105590820312,
+                160.1854248046875
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "operation": "MULTIPLY",
+                "use_clamp": false
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 112.5999984741211
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                }
+            ]
+        },
+        {
+            "rid": "f051d15a-fe8a-4beb-882b-ba17025c1130",
+            "type": "ShaderNodeTexNoise",
+            "name": "ノイズテクスチャ.001",
+            "label": "",
+            "loc": [
+                -291.8642578125,
+                -67.54545593261719
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 1.4000000953674316
+                },
+                {
+                    "i": 3,
+                    "v": 12.0
+                },
+                {
+                    "i": 4,
+                    "v": 0.6416666507720947
+                },
+                {
+                    "i": 5,
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "v": 0.0
+                }
+            ]
+        },
+        {
+            "rid": "1c6195c2-1afe-4227-96a9-a0ad7825e8c3",
+            "type": "NodeReroute",
+            "name": "リルート.002",
+            "label": "",
+            "loc": [
+                39.55777359008789,
+                -113.73934936523438
+            ],
+            "dims": [
+                16.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": []
+        },
+        {
+            "rid": "b1c66e67-07ce-4e7f-b4ee-2d58aeb6b09d",
+            "type": "ShaderNodeBump",
+            "name": "バンプ",
+            "label": "",
+            "loc": [
+                1029.396484375,
+                -53.672950744628906
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": 0.3916666805744171
+                },
+                {
+                    "i": 1,
+                    "v": 0.3999999761581421
+                },
+                {
+                    "i": 3,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "02f68ddd-875c-4531-acb6-0ba63d135722",
+            "type": "ShaderNodeValToRGB",
+            "name": "カラーランプ.001",
+            "label": "",
+            "loc": [
+                203.7698974609375,
+                -221.21209716796875
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.34545445442199707,
+                        "color": [
+                            0.0,
+                            0.01411832682788372,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.5954549312591553,
+                        "color": [
+                            1.0,
+                            0.06215023994445801,
+                            0.09281119704246521,
+                            1.0
+                        ],
+                        "idx": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rid": "8bf218b0-d809-4199-a4e2-9675638bf449",
+            "type": "ShaderNodeBsdfPrincipled",
+            "name": "プリンシプルBSDF",
+            "label": "",
+            "loc": [
+                1304.5784912109375,
+                305.4193420410156
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 0,
+                    "v": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "v": 0.5
+                },
+                {
+                    "i": 3,
+                    "v": 1.4500000476837158
+                },
+                {
+                    "i": 4,
+                    "v": 1.0
+                },
+                {
+                    "i": 6,
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "v": 0.0
+                },
+                {
+                    "i": 8,
+                    "v": [
+                        1.0,
+                        0.20000000298023224,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "i": 9,
+                    "v": 0.05000000074505806
+                },
+                {
+                    "i": 10,
+                    "v": 1.399999976158142
+                },
+                {
+                    "i": 11,
+                    "v": 0.0
+                },
+                {
+                    "i": 12,
+                    "v": 0.5
+                },
+                {
+                    "i": 13,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 14,
+                    "v": 0.0
+                },
+                {
+                    "i": 15,
+                    "v": 0.0
+                },
+                {
+                    "i": 16,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 17,
+                    "v": 0.0
+                },
+                {
+                    "i": 18,
+                    "v": 0.0
+                },
+                {
+                    "i": 19,
+                    "v": 0.029999999329447746
+                },
+                {
+                    "i": 20,
+                    "v": 1.5
+                },
+                {
+                    "i": 21,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 22,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 23,
+                    "v": 0.0
+                },
+                {
+                    "i": 24,
+                    "v": 0.5
+                },
+                {
+                    "i": 25,
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "5f9f8b9f-a005-4aa9-bb5f-6be903cae42c",
+            "type": "ShaderNodeOutputMaterial",
+            "name": "マテリアル出力",
+            "label": "",
+            "loc": [
+                1594.5784912109375,
+                305.4193420410156
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {},
+            "inputs": [
+                {
+                    "i": 2,
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "v": 0.0
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "b60cb4c0-3058-4793-9e24-fd299c8973e6",
+            "f_sock": 0,
+            "t_rid": "9d1c5ea9-0dbe-443e-8da6-b3237d03c773",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "ef16014b-9779-4239-9e61-b4858e6b2fec",
+            "f_sock": 3,
+            "t_rid": "b60cb4c0-3058-4793-9e24-fd299c8973e6",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "8a0dcab5-703b-4657-9a6a-ca13365a749f",
+            "f_sock": 0,
+            "t_rid": "8bf218b0-d809-4199-a4e2-9675638bf449",
+            "t_sock": 27
+        },
+        {
+            "f_rid": "8bf218b0-d809-4199-a4e2-9675638bf449",
+            "f_sock": 0,
+            "t_rid": "5f9f8b9f-a005-4aa9-bb5f-6be903cae42c",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "9d1c5ea9-0dbe-443e-8da6-b3237d03c773",
+            "f_sock": 0,
+            "t_rid": "c09eff82-9fad-41bd-86f5-e13dfa67b9ca",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "95f7e7f4-0ce4-4880-9270-43a3003f3f64",
+            "f_sock": 0,
+            "t_rid": "879e92fc-0244-47b0-a358-2f27c9e348dd",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "879e92fc-0244-47b0-a358-2f27c9e348dd",
+            "f_sock": 0,
+            "t_rid": "3f6f8899-89ad-480b-be23-948e42b0e105",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "3f6f8899-89ad-480b-be23-948e42b0e105",
+            "f_sock": 0,
+            "t_rid": "44fd7df1-2599-4406-8bb6-53f817f4c9a4",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "e4a5bc34-260c-4727-84f1-d070660ac8ec",
+            "f_sock": 0,
+            "t_rid": "44fd7df1-2599-4406-8bb6-53f817f4c9a4",
+            "t_sock": 1
+        },
+        {
+            "f_rid": "c09eff82-9fad-41bd-86f5-e13dfa67b9ca",
+            "f_sock": 0,
+            "t_rid": "95f7e7f4-0ce4-4880-9270-43a3003f3f64",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "44fd7df1-2599-4406-8bb6-53f817f4c9a4",
+            "f_sock": 0,
+            "t_rid": "8a0dcab5-703b-4657-9a6a-ca13365a749f",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "95f7e7f4-0ce4-4880-9270-43a3003f3f64",
+            "f_sock": 0,
+            "t_rid": "e4a5bc34-260c-4727-84f1-d070660ac8ec",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "b1c66e67-07ce-4e7f-b4ee-2d58aeb6b09d",
+            "f_sock": 0,
+            "t_rid": "8bf218b0-d809-4199-a4e2-9675638bf449",
+            "t_sock": 5
+        },
+        {
+            "f_rid": "b60cb4c0-3058-4793-9e24-fd299c8973e6",
+            "f_sock": 0,
+            "t_rid": "f051d15a-fe8a-4beb-882b-ba17025c1130",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "1c6195c2-1afe-4227-96a9-a0ad7825e8c3",
+            "f_sock": 0,
+            "t_rid": "b1c66e67-07ce-4e7f-b4ee-2d58aeb6b09d",
+            "t_sock": 2
+        },
+        {
+            "f_rid": "f051d15a-fe8a-4beb-882b-ba17025c1130",
+            "f_sock": 0,
+            "t_rid": "1c6195c2-1afe-4227-96a9-a0ad7825e8c3",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "1c6195c2-1afe-4227-96a9-a0ad7825e8c3",
+            "f_sock": 0,
+            "t_rid": "02f68ddd-875c-4531-acb6-0ba63d135722",
+            "t_sock": 0
+        },
+        {
+            "f_rid": "02f68ddd-875c-4531-acb6-0ba63d135722",
+            "f_sock": 0,
+            "t_rid": "8bf218b0-d809-4199-a4e2-9675638bf449",
+            "t_sock": 26
+        }
+    ],
+    "interface": [],
+    "tree_type": "ShaderNodeTree"
+}
