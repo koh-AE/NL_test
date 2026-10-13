@@ -1,0 +1,574 @@
+{
+    "meta": {
+        "blender": "4.4.0",
+        "addon": "4.9.8"
+    },
+    "nodes": [
+        {
+            "rid": "n0",
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "label": "",
+            "loc": [
+                300.0,
+                300.0
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    300.0,
+                    300.0
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputMaterial",
+                "bl_label": "Material Output",
+                "bl_description": "Output surface material information for use in rendering",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+            },
+            "inputs": [
+                {
+                    "i": 2,
+                    "id": "Displacement",
+                    "name": "Displacement",
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 3,
+                    "id": "Thickness",
+                    "name": "Thickness",
+                    "v": 0.0
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n1",
+            "type": "ShaderNodeBsdfPrincipled",
+            "name": "Principled BSDF",
+            "label": "",
+            "loc": [
+                10.0,
+                300.0
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    10.0,
+                    300.0
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBsdfPrincipled",
+                "bl_label": "Principled BSDF",
+                "bl_description": "Physically-based, easy-to-use shader for rendering surface materials, based on the OpenPBR model",
+                "bl_icon": "NONE",
+                "bl_width_default": 240.0,
+                "bl_width_min": 140.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "distribution": "MULTI_GGX",
+                "subsurface_method": "RANDOM_WALK"
+            },
+            "inputs": [
+                {
+                    "i": 1,
+                    "id": "Metallic",
+                    "name": "Metallic",
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "id": "Roughness",
+                    "name": "Roughness",
+                    "v": 0.5
+                },
+                {
+                    "i": 3,
+                    "id": "IOR",
+                    "name": "IOR",
+                    "v": 1.4500000476837158
+                },
+                {
+                    "i": 4,
+                    "id": "Alpha",
+                    "name": "Alpha",
+                    "v": 1.0
+                },
+                {
+                    "i": 5,
+                    "id": "Normal",
+                    "name": "Normal",
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 6,
+                    "id": "Weight",
+                    "name": "Weight",
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "id": "Diffuse Roughness",
+                    "name": "Diffuse Roughness",
+                    "v": 0.0
+                },
+                {
+                    "i": 8,
+                    "id": "Subsurface Weight",
+                    "name": "Subsurface Weight",
+                    "v": 0.0
+                },
+                {
+                    "i": 9,
+                    "id": "Subsurface Radius",
+                    "name": "Subsurface Radius",
+                    "v": [
+                        1.0,
+                        0.20000000298023224,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "i": 10,
+                    "id": "Subsurface Scale",
+                    "name": "Subsurface Scale",
+                    "v": 0.05000000074505806
+                },
+                {
+                    "i": 11,
+                    "id": "Subsurface IOR",
+                    "name": "Subsurface IOR",
+                    "v": 1.399999976158142
+                },
+                {
+                    "i": 12,
+                    "id": "Subsurface Anisotropy",
+                    "name": "Subsurface Anisotropy",
+                    "v": 0.0
+                },
+                {
+                    "i": 13,
+                    "id": "Specular IOR Level",
+                    "name": "Specular IOR Level",
+                    "v": 0.5
+                },
+                {
+                    "i": 14,
+                    "id": "Specular Tint",
+                    "name": "Specular Tint",
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 15,
+                    "id": "Anisotropic",
+                    "name": "Anisotropic",
+                    "v": 0.0
+                },
+                {
+                    "i": 16,
+                    "id": "Anisotropic Rotation",
+                    "name": "Anisotropic Rotation",
+                    "v": 0.0
+                },
+                {
+                    "i": 17,
+                    "id": "Tangent",
+                    "name": "Tangent",
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 18,
+                    "id": "Transmission Weight",
+                    "name": "Transmission Weight",
+                    "v": 0.0
+                },
+                {
+                    "i": 19,
+                    "id": "Coat Weight",
+                    "name": "Coat Weight",
+                    "v": 0.0
+                },
+                {
+                    "i": 20,
+                    "id": "Coat Roughness",
+                    "name": "Coat Roughness",
+                    "v": 0.029999999329447746
+                },
+                {
+                    "i": 21,
+                    "id": "Coat IOR",
+                    "name": "Coat IOR",
+                    "v": 1.5
+                },
+                {
+                    "i": 22,
+                    "id": "Coat Tint",
+                    "name": "Coat Tint",
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 23,
+                    "id": "Coat Normal",
+                    "name": "Coat Normal",
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 24,
+                    "id": "Sheen Weight",
+                    "name": "Sheen Weight",
+                    "v": 0.0
+                },
+                {
+                    "i": 25,
+                    "id": "Sheen Roughness",
+                    "name": "Sheen Roughness",
+                    "v": 0.5
+                },
+                {
+                    "i": 26,
+                    "id": "Sheen Tint",
+                    "name": "Sheen Tint",
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 27,
+                    "id": "Emission Color",
+                    "name": "Emission Color",
+                    "v": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 28,
+                    "id": "Emission Strength",
+                    "name": "Emission Strength",
+                    "v": 0.0
+                },
+                {
+                    "i": 29,
+                    "id": "Thin Film Thickness",
+                    "name": "Thin Film Thickness",
+                    "v": 0.0
+                },
+                {
+                    "i": 30,
+                    "id": "Thin Film IOR",
+                    "name": "Thin Film IOR",
+                    "v": 1.3300000429153442
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "rid": "n2",
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture",
+            "label": "",
+            "loc": [
+                -569.1268920898438,
+                225.6729736328125
+            ],
+            "dims": [
+                140.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    -569.1268920898438,
+                    225.6729736328125
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": true,
+                "bl_idname": "ShaderNodeTexNoise",
+                "bl_label": "Noise Texture",
+                "bl_description": "Generate fractal Perlin noise",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "noise_dimensions": "3D",
+                "noise_type": "FBM",
+                "normalize": true
+            },
+            "inputs": [
+                {
+                    "i": 0,
+                    "id": "Vector",
+                    "name": "Vector",
+                    "v": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "id": "W",
+                    "name": "W",
+                    "v": 0.0
+                },
+                {
+                    "i": 2,
+                    "id": "Scale",
+                    "name": "Scale",
+                    "v": 5.0
+                },
+                {
+                    "i": 3,
+                    "id": "Detail",
+                    "name": "Detail",
+                    "v": 2.0
+                },
+                {
+                    "i": 4,
+                    "id": "Roughness",
+                    "name": "Roughness",
+                    "v": 0.5
+                },
+                {
+                    "i": 5,
+                    "id": "Lacunarity",
+                    "name": "Lacunarity",
+                    "v": 2.0
+                },
+                {
+                    "i": 6,
+                    "id": "Offset",
+                    "name": "Offset",
+                    "v": 0.0
+                },
+                {
+                    "i": 7,
+                    "id": "Gain",
+                    "name": "Gain",
+                    "v": 1.0
+                },
+                {
+                    "i": 8,
+                    "id": "Distortion",
+                    "name": "Distortion",
+                    "v": 0.0
+                }
+            ],
+            "outputs": [
+                {
+                    "i": 0,
+                    "id": "Fac",
+                    "name": "Fac",
+                    "v": 0.0
+                },
+                {
+                    "i": 1,
+                    "id": "Color",
+                    "name": "Color",
+                    "v": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929,
+                        1.0
+                    ]
+                }
+            ]
+        },
+        {
+            "rid": "n3",
+            "type": "ShaderNodeValToRGB",
+            "name": "Color Ramp",
+            "label": "",
+            "loc": [
+                -328.3909606933594,
+                257.1343078613281
+            ],
+            "dims": [
+                240.0,
+                100.0
+            ],
+            "mute": false,
+            "hide": false,
+            "color": null,
+            "parent_rid": null,
+            "props": {
+                "location_absolute": [
+                    -328.3909606933594,
+                    257.1343078613281
+                ],
+                "warning_propagation": "ALL",
+                "show_options": true,
+                "show_preview": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeValToRGB",
+                "bl_label": "Color Ramp",
+                "bl_description": "Map values to colors with the use of a gradient",
+                "bl_icon": "NONE",
+                "bl_width_default": 240.0,
+                "bl_width_min": 140.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+            },
+            "inputs": [],
+            "outputs": [
+                {
+                    "i": 0,
+                    "id": "Color",
+                    "name": "Color",
+                    "v": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929,
+                        1.0
+                    ]
+                },
+                {
+                    "i": 1,
+                    "id": "Alpha",
+                    "name": "Alpha",
+                    "v": 0.0
+                }
+            ],
+            "color_ramp": {
+                "interpolation": "LINEAR",
+                "elements": [
+                    {
+                        "pos": 0.12363636493682861,
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "idx": 0
+                    },
+                    {
+                        "pos": 0.4654545783996582,
+                        "color": [
+                            0.49986833333969116,
+                            0.01495154108852148,
+                            0.009306153282523155,
+                            1.0
+                        ],
+                        "idx": 1
+                    },
+                    {
+                        "pos": 0.8000000715255737,
+                        "color": [
+                            0.18606135249137878,
+                            0.10385577380657196,
+                            1.0,
+                            1.0
+                        ],
+                        "idx": 2
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "f_rid": "n2",
+            "f_sock": 0,
+            "f_id": "Fac",
+            "f_name": "Fac",
+            "t_rid": "n3",
+            "t_sock": 0,
+            "t_id": "Fac",
+            "t_name": "Fac"
+        },
+        {
+            "f_rid": "n1",
+            "f_sock": 0,
+            "f_id": "BSDF",
+            "f_name": "BSDF",
+            "t_rid": "n0",
+            "t_sock": 0,
+            "t_id": "Surface",
+            "t_name": "Surface"
+        },
+        {
+            "f_rid": "n3",
+            "f_sock": 0,
+            "f_id": "Color",
+            "f_name": "Color",
+            "t_rid": "n1",
+            "t_sock": 0,
+            "t_id": "Base Color",
+            "t_name": "Base Color"
+        }
+    ],
+    "interface": [],
+    "tree_type": "ShaderNodeTree",
+    "drivers": []
+}
